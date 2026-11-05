@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follow & Connect | Villa Asakura</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+.va-sc a{color:inherit;text-decoration:none}
+.va-sc .va-tile img{transition:transform .5s ease}
+.va-sc .va-tile:hover img{transform:scale(1.04)}
+</style>
+</helmet>
+<section id="follow" class="va-sc" lang="{{lang}}" style="font-family: {{font}}; color: #111315; background: #F2F1EE; line-height: 1.8; padding-top: 112px; padding-bottom: 112px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: flex-end; justify-content: space-between; margin-bottom: 56px">
+<div style="flex: 1 1 420px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: #23485A">{{L.eye}}</p><h2 style="margin: 0; font-family: {{serif}}; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.5">{{L.h}}</h2></div>
+<p style="flex: 1 1 380px; margin: 0; font-size: 16px; color: #3E4246">{{L.lead}}</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap"><span style="display: inline-flex; align-items: center; gap: 10px; font-family: 'Italiana', serif; font-size: 22px; letter-spacing: 0.14em"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>{{L.ig}}</span><span style="font-size: 14px; color: #5A5E62">{{L.acct}}</span></div>
+<a href="{{links.instagram}}" target="_blank" rel="noopener" aria-label="{{L.igb}}" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px">
+<sc-for list="{{feed}}" as="f" hint-placeholder-count="9"><span class="va-tile" style="display: block; aspect-ratio: 4 / 5; overflow: hidden; background: #E6E5E0"><img src="{{f}}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"></span></sc-for>
+</a>
+<a href="{{links.instagram}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; background: #111315; color: #F2F1EE; font-size: 13px; letter-spacing: 0.16em"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>{{L.igb}}</a>
+</div>
+
+</div>
+<div style="margin-top: 56px; padding-top: 32px; border-top: 1px solid #C9C8C3; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-start">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 6px; font-family: {{serif}}; font-size: 22px">{{L.ch}}</p><p style="margin: 0; font-size: 13px; color: #5A5E62">{{L.chs}}</p></div>
+<div style="flex: 2.4 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px">
+<sc-for list="{{chans}}" as="c" hint-placeholder-count="6"><a href="{{c.href}}" target="{{c.target}}" rel="noopener" style="{{c.style}}"><span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500"><span aria-hidden="true" style="{{c.dot}}"></span>{{c.name}}</span><span style="font-size: 11px; color: #5A5E62; letter-spacing: 0.05em">{{c.hint}}</span></a></sc-for>
+</div>
+</div>
+</div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"locale":{"editor":"enum","default":"ja","options":["ja","en","zhs","zht","ko","th"]},"$preview":{"width":1440,"height":1500}}'>
+const VA_SC = {"T": {"ja": {"eye": "FOLLOW ・ CONNECT", "h": "旅のまえに、のぞいてみる。", "lead": "写真と動画は Instagram で。気になることは、Instagram のメッセージかメールで、お気軽にどうぞ。", "ig": "INSTAGRAM", "igb": "Instagram でフォロー", "yt": "YOUTUBE", "ytc": "4階のテラスへ。潮風と、270度の海。", "ytb": "YouTube で動画を見る", "sub": "チャンネル登録", "ch": "メッセージで相談する", "chs": "日本語・English・中文でお返事します", "more": "そのほかのSNS", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}, "en": {"eye": "FOLLOW ・ CONNECT", "h": "See it before you go.", "lead": "Photos and films on Instagram. Questions? Send us a message on Instagram or by email.", "ig": "INSTAGRAM", "igb": "Follow on Instagram", "yt": "YOUTUBE", "ytc": "Out to the 4th-floor terrace — sea breeze and a 270° view.", "ytb": "Watch on YouTube", "sub": "Subscribe", "ch": "Message us", "chs": "We reply in English, 日本語 and 中文", "more": "Also on", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}, "zhs": {"eye": "FOLLOW ・ CONNECT", "h": "出发前，先看一看。", "lead": "照片与影片请见 Instagram。有任何问题，欢迎通过 Instagram 私信或电子邮件联系我们。", "ig": "INSTAGRAM", "igb": "在 Instagram 关注", "yt": "YOUTUBE", "ytc": "走上四楼露台，海风与270度的海景。", "ytb": "在 YouTube 观看", "sub": "订阅频道", "ch": "发消息咨询", "chs": "可用中文、English、日本語回复", "more": "也可以在", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}, "zht": {"eye": "FOLLOW ・ CONNECT", "h": "出發前，先看一看。", "lead": "照片與影片請見 Instagram。有任何問題，歡迎透過 Instagram 私訊或電子郵件聯絡我們。", "ig": "INSTAGRAM", "igb": "在 Instagram 追蹤", "yt": "YOUTUBE", "ytc": "走上四樓露台，海風與270度的海景。", "ytb": "在 YouTube 觀看", "sub": "訂閱頻道", "ch": "傳訊息諮詢", "chs": "可用中文、English、日本語回覆", "more": "也可以在", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}, "ko": {"eye": "FOLLOW ・ CONNECT", "h": "떠나기 전에, 먼저 둘러보기.", "lead": "사진과 영상은 Instagram에서. 궁금한 점은 Instagram 메시지나 이메일로 편하게 물어보세요.", "ig": "INSTAGRAM", "igb": "Instagram 팔로우", "yt": "YOUTUBE", "ytc": "4층 테라스로. 바닷바람과 270도의 바다.", "ytb": "YouTube에서 보기", "sub": "구독하기", "ch": "메시지로 문의하기", "chs": "日本語・English・中文으로 답장드립니다", "more": "그 밖의 SNS", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}, "th": {"eye": "FOLLOW ・ CONNECT", "h": "ดูก่อนออกเดินทาง", "lead": "ภาพถ่ายและวิดีโอบน Instagram มีคำถามส่งข้อความทาง Instagram หรืออีเมลได้เลย", "ig": "INSTAGRAM", "igb": "ติดตามบน Instagram", "yt": "YOUTUBE", "ytc": "ออกไปที่ระเบียงชั้น 4 ลมทะเลและวิว 270 องศา", "ytb": "ดูบน YouTube", "sub": "กดติดตามช่อง", "ch": "ส่งข้อความถึงเรา", "chs": "ตอบกลับเป็น English・日本語・中文", "more": "ช่องทางอื่น", "acct": "@villa_asakura", "order": ["ig", "mail"], "social": []}}, "CH": {"line": ["LINE", "#06C755"], "whatsapp": ["WhatsApp", "#25D366"], "kakao": ["KakaoTalk", "#FEE500"], "wechat": ["WeChat", "#07C160"], "mail": ["MAIL", "#23485A"], "red": ["小红书 RED", "#FF2442"], "ig": ["Instagram", "#C13584"]}, "HINT": {"ja": {"line": "日本・台湾・タイ", "whatsapp": "世界共通", "kakao": "韓国", "wechat": "中国", "mail": "メール", "red": "中国", "ig": "ダイレクトメッセージ"}, "en": {"line": "Japan · Taiwan · Thailand", "whatsapp": "Worldwide", "kakao": "Korea", "wechat": "China", "mail": "Email", "red": "China", "ig": "Direct message"}, "zhs": {"line": "日本・台湾・泰国", "whatsapp": "全球", "kakao": "韩国", "wechat": "中国大陆", "mail": "电子邮件", "red": "中国", "ig": "私信"}, "zht": {"line": "日本・台灣・泰國", "whatsapp": "全球", "kakao": "韓國", "wechat": "中國大陸", "mail": "電子郵件", "red": "中國", "ig": "私訊"}, "ko": {"line": "일본・대만・태국", "whatsapp": "전 세계", "kakao": "한국", "wechat": "중국", "mail": "이메일", "red": "중국", "ig": "다이렉트 메시지"}, "th": {"line": "ญี่ปุ่น・ไต้หวัน・ไทย", "whatsapp": "ทั่วโลก", "kakao": "เกาหลี", "wechat": "จีน", "mail": "อีเมล", "red": "จีน", "ig": "ส่งข้อความ"}}, "LINKS": {"instagram": "https://www.instagram.com/villa_asakura/", "ig": "https://www.instagram.com/villa_asakura/", "mail": "mailto:info@a4tokyo.com"}, "FEED": ["assets/299845381761b1cf8bd6d9e96dc21d07.jpg", "assets/09cad1de8d47684e78eb418d6e892f9e.jpg", "assets/4dda46dbe84066524195fa25de9e1497.jpg", "assets/f40e8cda14731f20c606ef81a6056020.jpg", "assets/9fc8736913ce6c7f984e07304a8cd1b6.jpg", "assets/d9e19d12bad9e1a1dc1e4ee32beaf5f4.jpg", "assets/a4a275f1aed563a6b37d3597e324291b.jpg", "assets/87ee89003ab3ef49f26d2fc048fd6201.jpg", "assets/15dfb35e3e4e3d5d0c2ce79497c144e5.jpg"]};
+const VA_SC_FONT = {"ja":["'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif","'Shippori Mincho B1', serif","ja"],"en":["'Zen Kaku Gothic New', 'Helvetica Neue', Arial, sans-serif","'Italiana', 'Shippori Mincho B1', serif","en"],"zhs":["'Noto Sans SC', 'PingFang SC', sans-serif","'Noto Serif SC', serif","zh-Hans"],"zht":["'Noto Sans TC', 'PingFang TC', sans-serif","'Noto Serif TC', serif","zh-Hant"],"ko":["'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif","'Noto Serif KR', serif","ko"],"th":["'Noto Sans Thai', 'Thonburi', sans-serif","'Noto Serif Thai', serif","th"]};
+class Component extends DCLogic {
+  renderVals() {
+    const loc = VA_SC.T[this.props.locale] ? this.props.locale : 'ja';
+    const L = VA_SC.T[loc]; const H = VA_SC.HINT[loc]; const K = VA_SC.LINKS;
+    const keys = L.order.concat(L.social);
+    const chans = keys.map((k, i) => {
+      const c = VA_SC.CH[k]; const href = K[k] || '#';
+      const first = i === 0;
+      return { name: c[0], hint: H[k], href, target: /^https?:/.test(href) ? '_blank' : '_self',
+        dot: 'width: 10px; height: 10px; border-radius: 50%; background: ' + c[1] + '; display: inline-block',
+        style: 'display: flex; flex-direction: column; gap: 2px; min-height: 64px; justify-content: center; padding: 10px 16px; border: 1px solid ' + (first ? '#111315' : '#C9C8C3') + '; background: ' + (first ? '#FFFFFF' : 'transparent') };
+    });
+    const F = VA_SC_FONT[loc];
+    return { L, chans, feed: VA_SC.FEED, links: K, font: F[0], serif: F[1], lang: F[2] };
+  }
+}
+</script>
+</body>
+</html>

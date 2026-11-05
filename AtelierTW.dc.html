@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATELIER | Villa Asakura</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+a{color:#111315;text-decoration:none}a:hover{color:#23485A}
+
+.va-root{container-type:inline-size}
+.va-burger{display:none}
+.va-burger>summary{list-style:none;cursor:pointer}
+.va-burger>summary::-webkit-details-marker{display:none}
+[style*="flex: 1"]{min-width:0}
+@container (max-width: 760px){
+.va-links{display:none !important}
+.va-burger{display:block !important}
+.va-logo{font-size:20px !important;letter-spacing:0.16em !important}
+img[style*="object-fit: cover"]:not([style*="position: absolute"]){max-height:440px !important}
+}
+@container (max-width: 560px){
+[style*="columns: 3 300px"],[style*="columns: 4 250px"]{columns:2 !important;column-gap:10px !important}
+[style*="repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 24px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 12px !important}
+}
+.va-sp{display:none}
+@container (max-width: 760px){
+.va-sp{display:block !important}
+.va-pc{display:none !important}
+.va-nav{visibility:hidden !important;height:60px !important;padding-top:0 !important;padding-bottom:0 !important;overflow:hidden !important}
+.va-hero{height:600px !important}
+}
+.va-vid-sp{display:none}
+.va-fit{object-fit:contain}
+@container (max-width: 760px){.va-vid-pc{display:none !important}.va-vid-sp{display:block !important}.va-fit{object-fit:cover !important}}
+</style>
+</helmet>
+<div class="va-root" style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #111315; background: #F2F1EE; line-height: 1.8">
+<div class="va-sp va-spbar" style="position: sticky; top: 0; z-index: 60; height: 0"><div style="position: absolute; left: 0; right: 0; top: 0; height: 60px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 20px; background: rgba(17,19,21,0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #F2F1EE"><a href="MainTW.dc.html" style="font-family: 'Italiana', serif; font-size: 19px; letter-spacing: 0.16em; white-space: nowrap; color: #F2F1EE">VILLA ASAKURA</a><div style="display: flex; align-items: center; gap: 4px"><a href="ReserveTW.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap">預訂</a><details class="va-burger"><summary aria-label="選單" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #F2F1EE"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"/></svg></summary><div style="position: absolute; left: 0; right: 0; top: 100%; z-index: 30; max-height: calc(100svh - 60px); overflow-y: auto; box-sizing: border-box; background: #111315; border-top: 1px solid #3A4046; padding: 16px 20px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; font-size: 13px; letter-spacing: 0.14em">
+<a href="ResortTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">RESORT</a>
+<a href="CentralParkTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">CENTRAL PARK</a>
+<a href="AtelierTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ATELIER</a>
+<a href="GastronomyTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">GASTRONOMY</a>
+<a href="ArtTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ART</a>
+<a href="ExperienceTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuideTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">AREA GUIDE</a>
+<a href="AccessTW.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ACCESS</a>
+<span style="grid-column: 1 / -1; display: flex; align-items: center; min-height: 52px; opacity: 0.85"><a href="Atelier.dc.html" style="color:inherit;opacity:0.7">JP</a> / <a href="AtelierEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="AtelierZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="AtelierTW.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">繁</a> / <a href="AtelierKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="AtelierTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="ReserveTW.dc.html" style="grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 16px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div></details></div></div></div>
+<header style="position: relative; height: 680px; overflow: hidden; background: #111315">
+<img src="assets/c9610634d72290b5b558d21a86c96547.jpg" alt="被當代藝術環繞的臥室" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<sc-if value="{{playH}}" hint-placeholder-val="{{false}}"><video class="va-fit" src="assets/76b57cb29d8c5f14bb7553aa738b3f4c.mp4" poster="assets/67152eb59b7575ede85e1061ef897e95.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="position: absolute; inset: 0; width: 100%; height: 100%; background: #0B0D10"></video></sc-if>
+<sc-if value="{{noPlayH}}" hint-placeholder-val="{{true}}"><div style="position: absolute; inset: 0; background: rgba(10,14,18,0.34)"></div></sc-if>
+<nav class="va-nav" style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 24px clamp(20px, 5cqw, 64px); color: #F2F1EE">
+<a class="va-logo" href="MainTW.dc.html" style="font-family: 'Italiana', serif; font-size: 26px; letter-spacing: 0.24em; color: #F2F1EE">VILLA ASAKURA</a>
+<div class="va-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 12px; letter-spacing: 0.18em">
+<a href="ResortTW.dc.html" style="color: #F2F1EE">RESORT</a>
+<a href="CentralParkTW.dc.html" style="color: #F2F1EE">CENTRAL PARK</a>
+<a href="AtelierTW.dc.html" style="color: #F2F1EE">ATELIER</a>
+<a href="GastronomyTW.dc.html" style="color: #F2F1EE">GASTRONOMY</a>
+<a href="ArtTW.dc.html" style="color: #F2F1EE">ART</a>
+<a href="ExperienceTW.dc.html" style="color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuideTW.dc.html" style="color: #F2F1EE">AREA GUIDE</a>
+<a href="AccessTW.dc.html" style="color: #F2F1EE">ACCESS</a>
+<span style="opacity: 0.85"><a href="Atelier.dc.html" style="color:inherit;opacity:0.7">JP</a> / <a href="AtelierEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="AtelierZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="AtelierTW.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">繁</a> / <a href="AtelierKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="AtelierTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="ReserveTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div>
+</nav>
+<sc-if value="{{noPlayH}}" hint-placeholder-val="{{true}}"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(20px, 5cqw, 64px) 64px; color: #F2F1EE">
+<p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.32em">TAKAMATSU CENTRAL ・ 1樓</p>
+<h1 style="margin: 0; font-family: 'Italiana', serif; font-weight: 400; font-size: clamp(52px, 7cqw, 104px); line-height: 1.05; letter-spacing: 0.06em">ATELIER</h1>
+<p style="margin: 14px 0 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(18px, 2cqw, 24px); letter-spacing: 0.08em">與作品共眠的房間</p>
+<div style="margin-top: 28px"><button type="button" onClick="{{startH}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px 0 14px; border: 1px solid rgba(242,241,238,0.8); background: rgba(11,13,16,0.4); color: #F2F1EE; font-family: inherit; font-size: 13px; letter-spacing: 0.14em; cursor: pointer"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M10.5 8.5 L18 13 L10.5 17.5 Z" fill="currentColor"/></svg>觀看影片</button></div></div></sc-if>
+<sc-if value="{{playH}}" hint-placeholder-val="{{false}}"><button type="button" onClick="{{stopH}}" style="position: absolute; right: clamp(20px, 5cqw, 64px); bottom: 28px; z-index: 5; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(242,241,238,0.7); background: rgba(11,13,16,0.55); color: #F2F1EE; font-family: inherit; font-size: 12px; letter-spacing: 0.14em; cursor: pointer"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12" stroke="currentColor" stroke-width="1.4"/></svg>關閉</button></sc-if>
+</header>
+<div style="background: #E6E5E0; padding: 18px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; font-size: 13px; letter-spacing: 0.2em">
+<span style="color: #5A5E62">THREE STAYS</span>
+<a href="ResortTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #5A5E62">RESORT</a>
+<a href="CentralParkTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #5A5E62">CENTRAL PARK ・ 4、5樓</a>
+<a href="AtelierTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; border-bottom: 2px solid #111315">ATELIER　1F</a>
+</div>
+<p style="margin: 0; font-size: 13px; color: #3E4246">香川縣高松市龜井町3-8 ・ 1樓 <a href="https://maps.app.goo.gl/BTuQbxHVHt2CwvPi6" style="border-bottom: 1px solid #111315; letter-spacing: 0.15em">GOOGLE MAP</a></p>
+</div>
+</div>
+
+<section style="padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<dl style="margin: 0; display: flex; flex-wrap: wrap; gap: 20px 32px; border-top: 1px solid #C9C8C3; border-bottom: 1px solid #C9C8C3; padding: 28px 0"><div style="flex: 1 1 150px"><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">SIZE</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 28px">75㎡</dd></div><div style="flex: 1 1 150px"><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">FLOOR</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 28px">1F</dd></div><div style="flex: 1 1 150px"><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">GUESTS</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 28px">up to 6</dd></div><div style="flex: 1 1 150px"><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">BEDS</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 28px">雙人床×2 + 榻榻米床×3</dd></div><div style="flex: 1 1 150px"><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">STYLE</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 28px">開放式空間</dd></div></dl>
+<div style="margin-top: 96px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 320px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">01 — THE ROOM</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">在作品環繞中，<br>入眠。</h2></div>
+<div style="flex: 1.3 1 420px; font-size: 16px; color: #3E4246"><p style="margin: 0 0 24px">填滿牆面的，是日本與海外備受矚目的當代藝術家作品。裸露的管線與復古地板，營造出畫廊般的空氣。</p><p style="margin: 0">大家共享一個空間，適合家庭旅行、姊妹出遊，以及有演出的夜晚。</p></div>
+</div>
+
+</div>
+</section>
+<section style="padding-top: 24px; padding-bottom: 112px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end; margin-bottom: 40px">
+<div style="flex: 1 1 440px"><p style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">FLOOR GUIDE</p><h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">點擊房間，<br>看看裡面。</h2><p style="margin: 0; font-size: 16px; color: #3E4246; max-width: 560px">深處是雙人床臥室，前方是架高的榻榻米床區，中間則是餐廳與廚房。將游標移至平面圖的房間（或點擊），即可查看照片與說明。</p></div>
+<div style="flex: 1 1 380px; min-width: 0"><p style="margin: 0 0 6px; font-size: 11px; letter-spacing: 0.24em; color: #5A5E62">BEDS ・ 床型配置</p><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #C9C8C3"><span style="flex: 0 0 56px; font-family: 'Italiana', serif; font-size: 22px">1F</span><span style="flex: 1 1 260px; font-size: 15px">深處：雙人床×2</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #C9C8C3"><span style="flex: 0 0 56px; font-family: 'Italiana', serif; font-size: 22px">1F</span><span style="flex: 1 1 260px; font-size: 15px">前方：單人榻榻米床×3（架高區）</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #C9C8C3"><span style="flex: 0 0 56px; font-family: 'Italiana', serif; font-size: 22px"></span><span style="flex: 1 1 260px; font-size: 15px">榻榻米床亦可作為榻榻米空間使用</span></div></div>
+</div>
+<dc-import name="FloorExplorer" site="atelier" hint-size="100%,1100px"></dc-import>
+<p style="margin: 20px 0 0; font-size: 12px; color: #5A5E62">※平面圖僅供示意，與實際尺寸、形狀有所差異。</p>
+</div>
+</section>
+
+
+<section style="padding-top: 24px; padding-bottom: 96px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<video src="assets/76b57cb29d8c5f14bb7553aa738b3f4c.mp4" poster="assets/67152eb59b7575ede85e1061ef897e95.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="flex: 0 1 340px; min-width: 0; height: 600px; object-fit: cover; display: block; background: #111315"></video>
+<div style="flex: 1 1 360px"><p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">MOVIE ・ WALK THROUGH</p><h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(26px, 2.8cqw, 38px); line-height: 1.6">推開門，<br>走進作品之中。</h2><p style="margin: 0 0 28px; font-size: 15px; color: #3E4246">從入口到臥室、浴室。一支走遍ATELIER的影片。</p><a href="AtelierGalleryTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">查看全部照片與影片</a></div>
+</div>
+</section>
+<section style="padding-top: 24px; padding-bottom: 96px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: 40px">
+<div><p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">PHOTO JOURNAL</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(26px, 2.8cqw, 38px); line-height: 1.6">以照片呈現與作品共度的一天。</h2></div>
+<a href="AtelierGalleryTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">查看全部照片（GALLERY）</a>
+</div>
+<div style="columns: 3 300px; column-gap: 24px"><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/f51e268d0f1a7bc6f0d01a6bed20bf13.jpg" alt="白色亞麻寢具，與滿牆的作品。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">白色亞麻寢具，與滿牆的作品。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/d1bc17606218ec961b5af4ac8df9b39f.jpg" alt="被石牆環繞的獨立浴缸。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">被石牆環繞的獨立浴缸。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/c9610634d72290b5b558d21a86c96547.jpg" alt="被滿牆藝術環繞入眠的1樓開放式空間。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">被滿牆藝術環繞入眠的1樓開放式空間。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/0a4486be398495bf7d4d7a1591ff7fb3.jpg" alt="色彩鮮豔的作品。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">色彩鮮豔的作品。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/4af8879122a7f3fe63dd09e51171a259.jpg" alt="大桌與架高區。適合大家圍坐共進晚餐。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">大桌與架高區。適合大家圍坐共進晚餐。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/9b91b39a8b3edbb3d207b190b6ce3873.jpg" alt="獨立浴缸。慢慢卸下旅途的疲憊。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">獨立浴缸。慢慢卸下旅途的疲憊。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/c82179abf7bbdaabb52079a03bf25f06.jpg" alt="掛滿單色作品的安靜牆面。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">掛滿單色作品的安靜牆面。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/ab7bfea5de2c96e2869237435c67c645.jpg" alt="走廊盡頭，作品依然延續。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">走廊盡頭，作品依然延續。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/2438d8b1af347538ba19f3512de02128.jpg" alt="如畫廊一般的城市廚房。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">如畫廊一般的城市廚房。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/a919f61143d5416f5f5c15a71a7d4cf1.jpg" alt="黃銅水龍頭。連細節都經過精挑細選。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">黃銅水龍頭。連細節都經過精挑細選。</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/692f4c416fc7fbe4e4b17c1977f531d3.jpg" alt="迎賓看板為您接風。" style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">迎賓看板為您接風。</figcaption></figure></div>
+</div>
+</section>
+<section style="background: #111315; color: #ECEBE7; padding-top: 112px; padding-bottom: 112px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-end; margin-bottom: 48px">
+<div style="flex: 1 1 420px"><p style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">THE COLLECTION ・ ATELIER</p><h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">滿牆的作品，<br>與入眠的房間。</h2><p style="margin: 0; font-size: 16px; color: #C8C9C6; max-width: 560px">床的另一側，通往浴室的走廊。ATELIER 的每一面牆，都是展示的空間。</p></div>
+<a href="AtelierGalleryTW.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border: 1px solid #ECEBE7; color: #ECEBE7; font-size: 13px; letter-spacing: 0.2em">查看全部照片</a>
+</div>
+<img src="assets/5aa107d75fdce65750eca94eeadbe59d.jpg" alt="陳列於臥室牆面的作品" style="width: 100%; height: 520px; object-fit: cover; display: block; margin-bottom: 48px">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 40px 24px"><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/2bd9f4f77276a4a3db7dc5414e7207c6.jpg" alt="色彩迸發的抽象畫" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">色彩迸發的抽象畫</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/3146c74a2b9b7fb12539b49bd7b8f7d3.jpg" alt="藍色人物" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">藍色人物</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/81d21c330f033904f3937e40d003f743.jpg" alt="黑貓素描" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">黑貓素描</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/09f51f496fd94081a5ae6689db6ee14f.jpg" alt="以紅線描繪的少年" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">以紅線描繪的少年</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/ac7a59bcd143237e90c77bd483609e9d.jpg" alt="花朵的圓形畫作" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">花朵的圓形畫作</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/7b97012b380d05ea5606c654ca736066.jpg" alt="並肩而立的兩人" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">並肩而立的兩人</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/209f7205361d1e4c63bbe0bd20f2f506.jpg" alt="身有刺青的女子" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">身有刺青的女子</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/9877291674ea3e484eee6911a130db45.jpg" alt="黃色背景前的女子" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">黃色背景前的女子</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/7427654ca002bfc14f615ff6923b6b84.jpg" alt="龍與武者" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">龍與武者</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/8fa8488153a3e05cc1c4c464838bf9b2.jpg" alt="手持杯子的藍髮少女" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">手持杯子的藍髮少女</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/81455f79ce1fcc41579a3ef41e8d42a1.jpg" alt="浮於天空的拼貼" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">浮於天空的拼貼</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/72cf8fbdf509a23b7e255955c0a97335.jpg" alt="數字與幽靈" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">數字與幽靈</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #1B1E21; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/239768a4b7c57c47a29dc14ca90f5a23.jpg" alt="桌上的物件" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #ECEBE7">桌上的物件</span></figcaption></figure></div>
+<p style="margin: 40px 0 0; font-size: 13px; color: #8E9295">部分作品可於 A4 Gallery 購買。<a href="ArtTW.dc.html" style="color: #ECEBE7; border-bottom: 1px solid #ECEBE7; margin-left: 8px">前往 ART 頁面</a></p>
+</div>
+</section>
+<section style="padding-top: 40px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 300px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">02 — FEATURES</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">比起飯店，<br>更像是生活。</h2></div>
+<ul style="flex: 1.4 1 460px; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px"><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">雙人床×2（深處臥室）</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">單人榻榻米床×3（前方架高區）。亦可作為榻榻米空間</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">洗脫烘衣機</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">MARKS&amp;WEB 保養品</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">吹風機・直髮夾</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">藍牙喇叭</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">獨立浴缸 ・ 免治馬桶</li><li style="padding: 14px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">迎賓飲品、點心與冰品</li></ul>
+</div>
+</section>
+
+<section style="padding-top: 40px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">03 — NEIGHBORHOOD</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 56px">高松的正中心。<br>想吃、想買、想去的，都在附近。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 40px"><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">中心商店街</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">步行即達</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">機場巴士站</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">步行3分鐘</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">中央公園</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">步行5分鐘</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">高松港（往直島、小豆島）</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">車程約10分鐘</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">栗林公園</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">車程約5分鐘</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0; font-size: 15px">穴吹體育館香川</p><p style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">車程約10分鐘</p></div></div>
+<div style="margin-top: 64px; display: flex; flex-wrap: wrap; gap: 16px"><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/d9dbcf4692d3e8006a4606a188a25761.jpg" alt="建築外觀" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">龜井町建築的1樓。隔著玻璃，就能望見作品。</figcaption></figure><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/2dac205c79892b1d1eb65d4eb71a655f.jpg" alt="高松的拱廊商店街" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">號稱日本最長的拱廊商店街</figcaption></figure><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/60a43d6f1922d390172c3098cc69904b.jpg" alt="附近咖啡館的咖啡" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">早晨，在老派喫茶店</figcaption></figure><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/10c4c7dd9ad8e343a6aebb9f00768744.jpg" alt="在地熟食與關東煮" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">夜晚，一點一點品嘗在地滋味</figcaption></figure></div>
+<div style="margin-top: 40px"><a href="AreaGuideTW.dc.html" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 30px; background: #111315; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">查看推薦店家與前往方式（AREA GUIDE）</a><a href="AreaGuideTW.dc.html#season" style="display: inline-flex; align-items: center; min-height: 52px; margin-left: 12px; padding: 0 24px; border: 1px solid #111315; font-size: 13px; letter-spacing: 0.2em">夏季煙火與藝術祭</a></div>
+</div>
+</section>
+
+<section id="getting-around" style="padding-top: 40px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">GETTING AROUND ・ 自行車與停車場</p>
+<h2 style="margin: 0 0 56px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">騎車逛街，<br>開車也安心。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 48px 64px">
+<div style="flex: 1 1 340px; border-top: 1px solid #111315; padding-top: 20px"><p style="margin: 0 0 6px; font-size: 11px; letter-spacing: 0.24em; color: #5A5E62">BICYCLE RENTAL</p><h3 style="margin: 0 0 4px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px">共享單車</h3><p style="margin: 0 0 16px; font-family: 'Italiana', serif; font-size: 26px">步行約1分鐘</p><p style="margin: 0; font-size: 15px; color: #3E4246">步行約1分鐘處有共享單車站點。想騎車逛市區的旅客，下載LUUP等應用程式即可，海外旅客也能直接使用（免駕照，需登錄信用卡）。</p></div>
+<div style="flex: 1 1 340px; border-top: 1px solid #111315; padding-top: 20px"><p style="margin: 0 0 6px; font-size: 11px; letter-spacing: 0.24em; color: #5A5E62">PARKING</p><h3 style="margin: 0 0 4px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px">停車場</h3><p style="margin: 0 0 16px; font-family: 'Italiana', serif; font-size: 26px">12小時停車券</p><p style="margin: 0; font-size: 15px; color: #3E4246">我們可依住宿天數，為您準備附近停車場「丸い亀さん。」（丸龜町町營第4停車場）的12小時停車券。請於抵達前3天以訊息告知。</p><p style="margin: 12px 0 0; font-size: 15px; color: #3E4246">停車券需事先購買，超過抵達前3天將無法安排。</p><p style="margin: 16px 0 0; font-size: 13px"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%B8%E4%BA%80%E7%94%BA%E7%94%BA%E5%96%B6%E7%AC%AC4%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener" style="border-bottom: 1px solid #111315; letter-spacing: 0.15em">GOOGLE MAP ↗</a></p></div>
+</div>
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px"><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/c045dd05c7998cbabcf29e777ce6d49e.jpg" alt="距離建物步行約1分鐘的共享單車站" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">步行約1分鐘的共享單車站。</figcaption></figure><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/04862c27ad94b4a38e57c57fd82e3e3d.jpg" alt="站點上排列的電動輔助自行車" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">騎上電動輔助自行車，輕鬆逛街。</figcaption></figure><figure style="flex: 1 1 260px; min-width: 0; margin: 0"><img src="assets/55a458199ae3589bf7f26c075c3b4f52.jpg" alt="LUUP的使用說明看板" style="width: 100%; height: 440px; object-fit: cover; display: block"><figcaption style="margin-top: 10px; font-size: 13px; color: #5A5E62">用App借車，可在任一站點歸還。</figcaption></figure></div>
+</div>
+</section>
+
+<section style="background: #E6E5E0; padding-top: 100px; padding-bottom: 100px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div><p style="margin: 0; font-size: 15px">房價與空房請至 Airbnb 頁面確認。</p><p style="margin: 4px 0 0; font-size: 12px; color: #5A5E62">價格依日期與人數而異。</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px"><a href="https://www.airbnb.com.tw/rooms/1211936889318049000" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; background: {{accent}}; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">查詢空房</a><a href="CentralParkTW.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #111315; color: #111315; font-size: 13px; letter-spacing: 0.2em">查看 CENTRAL PARK</a></div>
+</div>
+</section>
+<footer style="background: #111315; color: #ECEBE7; padding-top: 96px; padding-bottom: 48px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: clamp(26px, 7.5cqw, 40px); letter-spacing: 0.24em">VILLA ASAKURA</p>
+<p style="margin: 8px 0 0; font-size: 13px; letter-spacing: 0.15em; color: #A9ADB0">Setouchi ・ Takamatsu</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; font-size: 13px; letter-spacing: 0.15em">
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="ResortTW.dc.html" style="color: #ECEBE7">RESORT</a>
+<a href="CentralParkTW.dc.html" style="color: #ECEBE7">CENTRAL PARK</a>
+<a href="AtelierTW.dc.html" style="color: #ECEBE7">ATELIER</a>
+<a href="GastronomyTW.dc.html" style="color: #ECEBE7">GASTRONOMY</a>
+<a href="ArtTW.dc.html" style="color: #ECEBE7">ART</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="ExperienceTW.dc.html" style="color: #ECEBE7">EXPERIENCE</a>
+<a href="StoryTW.dc.html" style="color: #ECEBE7">STORY</a>
+<a href="JournalTW.dc.html" style="color: #ECEBE7">JOURNAL</a>
+<a href="AreaGuideTW.dc.html" style="color: #ECEBE7">AREA GUIDE</a>
+<a href="AccessTW.dc.html" style="color: #ECEBE7">ACCESS</a>
+<a href="ReserveTW.dc.html" style="color: #ECEBE7">RESERVE</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="https://www.instagram.com/villa_asakura/" target="_blank" rel="noopener" style="color: #ECEBE7">INSTAGRAM</a><a href="AccessTW.dc.html#faq" style="color: #ECEBE7">FAQ</a><a href="AccessTW.dc.html#legal" style="color: #ECEBE7">條款與政策</a></div>
+</div>
+</div>
+<p style="max-width: 1280px; margin: 80px auto 0; font-size: 11px; letter-spacing: 0.15em; color: #A9ADB0">© VILLA ASAKURA</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#23485A","options":["#23485A","#7A5A3A","#3F4A3C","#111315"]},"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const st = this.state || {};
+    return { accent: this.props.accent ?? '#23485A', playH: !!st['pH'], noPlayH: !st['pH'], startH: () => this.setState({ pH: true }), stopH: () => this.setState({ pH: false }) };
+  }
+}
+</script>
+</body>
+</html>

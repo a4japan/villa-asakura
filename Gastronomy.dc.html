@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GASTRONOMY | Villa Asakura</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+a{color:#111315;text-decoration:none}a:hover{color:#23485A}
+
+.va-root{container-type:inline-size}
+.va-burger{display:none}
+.va-burger>summary{list-style:none;cursor:pointer}
+.va-burger>summary::-webkit-details-marker{display:none}
+[style*="flex: 1"]{min-width:0}
+@container (max-width: 760px){
+.va-links{display:none !important}
+.va-burger{display:block !important}
+.va-logo{font-size:20px !important;letter-spacing:0.16em !important}
+img[style*="object-fit: cover"]:not([style*="position: absolute"]){max-height:440px !important}
+}
+@container (max-width: 560px){
+[style*="columns: 3 300px"],[style*="columns: 4 250px"]{columns:2 !important;column-gap:10px !important}
+[style*="repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 24px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 12px !important}
+}
+.va-sp{display:none}
+@container (max-width: 760px){
+.va-sp{display:block !important}
+.va-pc{display:none !important}
+.va-nav{visibility:hidden !important;height:60px !important;padding-top:0 !important;padding-bottom:0 !important;overflow:hidden !important}
+.va-hero{height:600px !important}
+}
+</style>
+</helmet>
+<div class="va-root" style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #111315; background: #F2F1EE; line-height: 1.8">
+<div class="va-sp va-spbar" style="position: sticky; top: 0; z-index: 60; height: 0"><div style="position: absolute; left: 0; right: 0; top: 0; height: 60px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 20px; background: rgba(17,19,21,0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #F2F1EE"><a href="Main.dc.html" style="font-family: 'Italiana', serif; font-size: 19px; letter-spacing: 0.16em; white-space: nowrap; color: #F2F1EE">VILLA ASAKURA</a><div style="display: flex; align-items: center; gap: 4px"><a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap">予約</a><details class="va-burger"><summary aria-label="メニュー" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #F2F1EE"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"/></svg></summary><div style="position: absolute; left: 0; right: 0; top: 100%; z-index: 30; max-height: calc(100svh - 60px); overflow-y: auto; box-sizing: border-box; background: #111315; border-top: 1px solid #3A4046; padding: 16px 20px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; font-size: 13px; letter-spacing: 0.14em">
+<a href="Resort.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ACCESS</a>
+<span style="grid-column: 1 / -1; display: flex; align-items: center; min-height: 52px; opacity: 0.85"><a href="Gastronomy.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">JP</a> / <a href="GastronomyEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="GastronomyZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="GastronomyTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="GastronomyKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="GastronomyTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="Reserve.dc.html" style="grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 16px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div></details></div></div></div>
+<header style="position: relative; height: 760px; overflow: hidden; background: #111315">
+<img src="assets/18218bd27ff1c57ea0c3a8914944ff98.jpg" alt="大理石のダイニング" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: absolute; inset: 0; background: rgba(10,14,18,0.34)"></div>
+<nav class="va-nav" style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 24px clamp(20px, 5cqw, 64px); color: #F2F1EE">
+<a class="va-logo" href="Main.dc.html" style="font-family: 'Italiana', serif; font-size: 26px; letter-spacing: 0.24em; color: #F2F1EE">VILLA ASAKURA</a>
+<div class="va-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 12px; letter-spacing: 0.18em">
+<a href="Resort.dc.html" style="color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #F2F1EE">ACCESS</a>
+<span style="opacity: 0.85"><a href="Gastronomy.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">JP</a> / <a href="GastronomyEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="GastronomyZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="GastronomyTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="GastronomyKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="GastronomyTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div>
+</nav>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(20px, 5cqw, 64px) 64px; color: #F2F1EE">
+<p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.32em">PRIVATE DINING ・ SETOUCHI</p>
+<h1 style="margin: 0; font-family: 'Italiana', serif; font-weight: 400; font-size: clamp(52px, 7cqw, 104px); line-height: 1.05; letter-spacing: 0.06em">GASTRONOMY</h1>
+<p style="margin: 14px 0 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(18px, 2cqw, 24px); letter-spacing: 0.08em">瀬戸内を、あなたのためだけの食卓に。</p>
+</div>
+</header>
+
+<section style="padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 380px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">01 — PHILOSOPHY</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 32px">メニューは、<br>決まっていません。</h2>
+<p style="margin: 0 0 20px; font-size: 16px; color: #3E4246">香川の海と大地を知り尽くした料理人が、邸宅のキッチンに立ちます。瀬戸内の魚、オリーブ牛、讃岐の野菜と果物。その時期にいちばんおいしい旬の食材で、一夜限りのコースを仕立てます。</p>
+<p style="margin: 0; font-size: 16px; color: #3E4246">ヴィーガン、グルテンフリー、アレルギーにも、事前のご相談で対応します。</p></div>
+<img src="assets/d41f05efcae07444dfc8af862820c29d.jpg" alt="大理石のキッチンとダイニング" style="flex: 1.2 1 460px; min-width: 0; height: 520px; object-fit: cover">
+</div>
+</section>
+
+<section style="background: #111315; color: #ECEBE7; padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">02 — THE CHEFS</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 20px">和と、イタリアン。<br>ふたりの料理人。</h2>
+<p style="margin: 0 0 64px; font-size: 16px; color: #C8C9C6; max-width: 720px">瀬戸内の旬を知り尽くした和食の料理人と、香川の素材に惚れ込んだイタリアンのシェフ。ご滞在の気分に合わせて、お選びください。</p>
+<div style="border: 1px solid #3A3F44; padding: 56px 32px; text-align: center"><p style="margin: 0 0 12px; font-family: 'Italiana', serif; font-size: 28px; letter-spacing: 0.2em; color: #ECEBE7">COMING SOON</p><p style="margin: 0; font-size: 15px; color: #C8C9C6">料理人のご紹介は、まもなく公開します。</p></div>
+
+<p style="margin: 120px 0 24px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">03 — COURSE</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 20px">コースの一例</h2>
+<p style="margin: 0 0 48px; font-size: 16px; color: #C8C9C6; max-width: 720px">香川は、海の幸も、果物も野菜も豊かな土地。献立は季節と仕入れによって変わります。その時期にいちばんおいしいものを、いちばんの形で。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 32px"><article style="flex: 1 1 460px; min-width: 0; border: 1px solid #33373A; padding: clamp(24px, 3cqw, 40px)">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 24px; letter-spacing: 0.1em; color: #A9C4CF">SETOUCHI KAISEKI</p>
+<h3 style="margin: 4px 0 12px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 26px">瀬戸内 海の懐石</h3>
+<p style="margin: 0 0 20px; font-size: 14px; color: #C8C9C6">瀬戸内の地魚と讃岐の旬で組み立てる、季節の懐石。</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #33373A"><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">先付</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">讃岐の旬野菜と、胡麻豆腐</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">椀物</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">瀬戸内の真鯛の潮仕立て</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">向付</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">その朝の地魚のお造り（鯛・はまち・季節の魚）</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">焼物</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">鰆の西京焼き、または季節の焼魚</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">強肴</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">香川県産オリーブ牛の炙り、小豆島の醤油で</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">食事</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">土鍋で炊く香川のお米、香の物、赤出汁</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">水菓子</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">香川の旬の果物</span></li></ul>
+</article><article style="flex: 1 1 460px; min-width: 0; border: 1px solid #33373A; padding: clamp(24px, 3cqw, 40px)">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 24px; letter-spacing: 0.1em; color: #A9C4CF">SETOUCHI ITALIANO</p>
+<h3 style="margin: 4px 0 12px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 26px">瀬戸内イタリアン</h3>
+<p style="margin: 0 0 20px; font-size: 14px; color: #C8C9C6">瀬戸内の海と島の恵みを、イタリアの技法で。</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #33373A"><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Antipasto</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">瀬戸内の地魚のカルパッチョ、小豆島オリーブオイル</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Primo</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">瀬戸内の魚介と讃岐小麦の手打ちパスタ</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Pesce</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">瀬戸内の真鯛のポワレ、季節の野菜とともに</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Carne</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">香川県産オリーブ牛のグリル</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Dolce</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">香川の旬の果物のドルチェ</span></li><li style="display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid #33373A"><span style="flex: 0 0 96px; font-size: 11px; letter-spacing: 0.2em; color: #A9C4CF; padding-top: 4px">Caffè</span><span style="flex: 1 1 220px; font-family: 'Shippori Mincho B1', serif; font-size: 16px">食後のエスプレッソ</span></li></ul>
+</article></div>
+<p style="margin: 24px 0 0; font-size: 13px; color: #A9ADB0">※ 内容は一例です。アレルギーや苦手な食材、ヴィーガン・グルテンフリーにも、事前のご相談で対応します。</p>
+</div>
+</section>
+
+<section style="background: #E6E5E0; padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">04 — RYOTEI BENTO</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 20px">料亭のお弁当を、<br>朝に、旅のお供に。</h2>
+<p style="margin: 0 0 48px; font-size: 16px; color: #3E4246; max-width: 720px">高松の料亭と連携し、仕出しのお弁当をご用意しています。料理人を呼ぶほどではない朝や、出かける日のお昼に。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px"><article style="flex: 1 1 380px; min-width: 0; background: #F2F1EE; padding: clamp(24px, 3cqw, 40px)">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; letter-spacing: 0.1em; color: {{accent}}">MORNING SHIDASHI</p>
+<h3 style="margin: 4px 0 14px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px">料亭の朝の仕出し弁当</h3>
+<p style="margin: 0 0 18px; font-size: 15px; color: #3E4246">高松の料亭から、朝の仕出し弁当をお部屋へお届けします。海を眺めながら、出汁の香る和の朝ごはんを。</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #C9C8C3"><li style="padding: 10px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">事前のご予約制です</li><li style="padding: 10px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">お届け時間はご希望に合わせて調整します</li></ul>
+</article><article style="flex: 1 1 380px; min-width: 0; background: #F2F1EE; padding: clamp(24px, 3cqw, 40px)">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; letter-spacing: 0.1em; color: {{accent}}">LUNCH BOX</p>
+<h3 style="margin: 4px 0 14px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px">旅に持っていく、お昼のお弁当</h3>
+<p style="margin: 0 0 18px; font-size: 15px; color: #3E4246">島めぐりや観光に、料亭のお弁当を持って出かけませんか。フェリーの上で、公園で、瀬戸内の景色と一緒に。</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #C9C8C3"><li style="padding: 10px 0; border-bottom: 1px solid #C9C8C3; font-size: 15px">事前にお申し付けいただければご用意します</li></ul>
+</article></div>
+</div>
+</section>
+
+<section style="padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">05 — ON REQUEST</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 20px">ご希望に合わせて、<br>香川の恵みを。</h2>
+<p style="margin: 0 0 48px; font-size: 16px; color: #3E4246; max-width: 720px">お食事に添えて、また滞在のひとときに。香川のお酒や果物、スイーツも、ご希望に合わせてご用意いたします。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 32px"><div style="flex: 1 1 260px; min-width: 0; padding-top: 20px; border-top: 1px solid #111315">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em; color: {{accent}}">SAKE & WINE</p>
+<h3 style="margin: 4px 0 10px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">香川のお酒</h3>
+<p style="margin: 0; font-size: 15px; color: #3E4246">香川の地酒や、瀬戸内のワイン・クラフトビールを。料理に合わせた一本もご提案します。</p>
+</div><div style="flex: 1 1 260px; min-width: 0; padding-top: 20px; border-top: 1px solid #111315">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em; color: {{accent}}">FRUIT</p>
+<h3 style="margin: 4px 0 10px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">季節の果物</h3>
+<p style="margin: 0; font-size: 15px; color: #3E4246">いちご「さぬきひめ」、キウイ、シャインマスカット。香川は果物の宝庫。その時期いちばんの果物をお部屋に。</p>
+</div><div style="flex: 1 1 260px; min-width: 0; padding-top: 20px; border-top: 1px solid #111315">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em; color: {{accent}}">SWEETS</p>
+<h3 style="margin: 4px 0 10px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">スイーツ・ケーキ</h3>
+<p style="margin: 0; font-size: 15px; color: #3E4246">誕生日や記念日のケーキ、地元の和菓子や洋菓子も、ご希望に合わせてご用意します。</p>
+</div></div>
+</div>
+</section>
+
+<section style="padding-top: 40px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 300px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">06 — HOW TO BOOK</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">食事のご予約</h2></div>
+<ol style="flex: 1.4 1 460px; margin: 0; padding-left: 1.2em; font-size: 16px; color: #3E4246">
+<li style="margin-bottom: 16px">{{bkGas}}</li>
+<li style="margin-bottom: 16px">料理人のコースや料亭のお弁当は、準備のため、お早めにお申し込みください。</li>
+<li style="margin-bottom: 16px">アレルギーや苦手な食材は、お申し込みの際にお知らせください。</li>
+<li>お酒・果物・スイーツ、直前のご希望は、メッセージでご相談ください。可能な限りお応えします。</li>
+</ol>
+</div>
+</section>
+<section style="background: #E6E5E0; padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">食事付きのプランを、見てみる。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px"><a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; background: {{accent}}; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">空室を確認する</a><a href="Reserve.dc.html#inquiry" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #111315; color: #111315; font-size: 13px; letter-spacing: 0.2em">プランを相談する</a></div>
+</div>
+</section>
+<footer style="background: #111315; color: #ECEBE7; padding-top: 96px; padding-bottom: 48px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: clamp(26px, 7.5cqw, 40px); letter-spacing: 0.24em">VILLA ASAKURA</p>
+<p style="margin: 8px 0 0; font-size: 13px; letter-spacing: 0.15em; color: #A9ADB0">Setouchi ・ Takamatsu</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; font-size: 13px; letter-spacing: 0.15em">
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="Resort.dc.html" style="color: #ECEBE7">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #ECEBE7">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #ECEBE7">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #ECEBE7">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #ECEBE7">ART</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="Experience.dc.html" style="color: #ECEBE7">EXPERIENCE</a>
+<a href="Story.dc.html" style="color: #ECEBE7">STORY</a>
+<a href="Journal.dc.html" style="color: #ECEBE7">JOURNAL</a>
+<a href="AreaGuide.dc.html" style="color: #ECEBE7">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #ECEBE7">ACCESS</a>
+<a href="Reserve.dc.html" style="color: #ECEBE7">RESERVE</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="https://www.instagram.com/villa_asakura/" target="_blank" rel="noopener" style="color: #ECEBE7">INSTAGRAM</a><a href="Access.dc.html#faq" style="color: #ECEBE7">FAQ</a><a href="Access.dc.html#legal" style="color: #ECEBE7">規約・ポリシー</a></div>
+</div>
+</div>
+<p style="max-width: 1280px; margin: 80px auto 0; font-size: 11px; letter-spacing: 0.15em; color: #A9ADB0">© VILLA ASAKURA</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"bookingMode":{"editor":"enum","default":"airbnb","options":["airbnb","direct"]},"accent":{"editor":"color","default":"#23485A","options":["#23485A","#7A5A3A","#3F4A3C","#111315"]},"$preview":{"width":1440,"height":6400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    // 予約の切り替えスイッチ：'airbnb'＝Airbnb接続（現在） / 'direct'＝自社予約エンジン（将来）
+    const mode = this.props.bookingMode === 'direct' ? 'direct' : 'airbnb';
+    const gas = { airbnb: "Airbnb でご予約のあと、RESERVE ページのフォームからお食事・お弁当をお申し込みください。", direct: "宿泊のご予約時に、オプションから食事・お弁当をお選びください。" };
+    return { accent: this.props.accent ?? '#23485A', bkGas: gas[mode] };
+  }
+}
+</script>
+</body>
+</html>

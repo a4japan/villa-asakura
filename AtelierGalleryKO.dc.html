@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATELIER GALLERY | Villa Asakura</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+a{color:#111315;text-decoration:none}a:hover{color:#23485A}
+
+.va-root{container-type:inline-size}
+.va-burger{display:none}
+.va-burger>summary{list-style:none;cursor:pointer}
+.va-burger>summary::-webkit-details-marker{display:none}
+[style*="flex: 1"]{min-width:0}
+@container (max-width: 760px){
+.va-links{display:none !important}
+.va-burger{display:block !important}
+.va-logo{font-size:20px !important;letter-spacing:0.16em !important}
+img[style*="object-fit: cover"]:not([style*="position: absolute"]){max-height:440px !important}
+}
+@container (max-width: 560px){
+[style*="columns: 3 300px"],[style*="columns: 4 250px"]{columns:2 !important;column-gap:10px !important}
+[style*="repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 24px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 12px !important}
+}
+.va-sp{display:none}
+@container (max-width: 760px){
+.va-sp{display:block !important}
+.va-pc{display:none !important}
+.va-nav{visibility:hidden !important;height:60px !important;padding-top:0 !important;padding-bottom:0 !important;overflow:hidden !important}
+.va-hero{height:600px !important}
+}
+</style>
+</helmet>
+<div class="va-root" style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #111315; background: #F2F1EE; line-height: 1.8">
+<div class="va-sp va-spbar" style="position: sticky; top: 0; z-index: 60; height: 0"><div style="position: absolute; left: 0; right: 0; top: 0; height: 60px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 20px; background: rgba(17,19,21,0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #F2F1EE"><a href="MainKO.dc.html" style="font-family: 'Italiana', serif; font-size: 19px; letter-spacing: 0.16em; white-space: nowrap; color: #F2F1EE">VILLA ASAKURA</a><div style="display: flex; align-items: center; gap: 4px"><a href="ReserveKO.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap">예약</a><details class="va-burger"><summary aria-label="메뉴" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #F2F1EE"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"/></svg></summary><div style="position: absolute; left: 0; right: 0; top: 100%; z-index: 30; max-height: calc(100svh - 60px); overflow-y: auto; box-sizing: border-box; background: #111315; border-top: 1px solid #3A4046; padding: 16px 20px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; font-size: 13px; letter-spacing: 0.14em">
+<a href="ResortKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">RESORT</a>
+<a href="CentralParkKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">CENTRAL PARK</a>
+<a href="AtelierKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ATELIER</a>
+<a href="GastronomyKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">GASTRONOMY</a>
+<a href="ArtKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ART</a>
+<a href="ExperienceKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuideKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">AREA GUIDE</a>
+<a href="AccessKO.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ACCESS</a>
+<span style="grid-column: 1 / -1; display: flex; align-items: center; min-height: 52px; opacity: 0.85"><a href="AtelierGallery.dc.html" style="color:inherit;opacity:0.7">JP</a> / <a href="AtelierGalleryEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="AtelierGalleryZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="AtelierGalleryTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="AtelierGalleryKO.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">한</a> / <a href="AtelierGalleryTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="ReserveKO.dc.html" style="grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 16px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div></details></div></div></div>
+<nav class="va-nav" style="position: relative; background: #111315; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 24px clamp(20px, 5cqw, 64px); color: #F2F1EE">
+<a class="va-logo" href="MainKO.dc.html" style="font-family: 'Italiana', serif; font-size: 26px; letter-spacing: 0.24em; color: #F2F1EE">VILLA ASAKURA</a>
+<div class="va-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 12px; letter-spacing: 0.18em">
+<a href="ResortKO.dc.html" style="color: #F2F1EE">RESORT</a>
+<a href="CentralParkKO.dc.html" style="color: #F2F1EE">CENTRAL PARK</a>
+<a href="AtelierKO.dc.html" style="color: #F2F1EE">ATELIER</a>
+<a href="GastronomyKO.dc.html" style="color: #F2F1EE">GASTRONOMY</a>
+<a href="ArtKO.dc.html" style="color: #F2F1EE">ART</a>
+<a href="ExperienceKO.dc.html" style="color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuideKO.dc.html" style="color: #F2F1EE">AREA GUIDE</a>
+<a href="AccessKO.dc.html" style="color: #F2F1EE">ACCESS</a>
+<span style="opacity: 0.85"><a href="AtelierGallery.dc.html" style="color:inherit;opacity:0.7">JP</a> / <a href="AtelierGalleryEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="AtelierGalleryZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="AtelierGalleryTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="AtelierGalleryKO.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">한</a> / <a href="AtelierGalleryTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="ReserveKO.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div>
+</nav>
+<div style="background: #E6E5E0; padding: 14px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px; font-size: 13px; letter-spacing: 0.2em">
+<span style="color: #5A5E62">GALLERY</span>
+<a href="ResortGalleryKO.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #5A5E62">RESORT</a>
+<a href="CentralParkGalleryKO.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #5A5E62">CENTRAL PARK</a>
+<a href="AtelierGalleryKO.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; border-bottom: 2px solid #111315; color: #111315">ATELIER</a>
+</div>
+</div>
+
+<section style="padding-top: 96px; padding-bottom: 40px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px">
+<div style="flex: 1 1 520px">
+<p style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">ATELIER ・ PHOTO JOURNAL</p>
+<h1 style="margin: 0 0 20px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(32px, 4cqw, 54px); line-height: 1.5">작품과 보내는 하루.</h1>
+<p style="margin: 0; font-size: 16px; color: #3E4246; max-width: 620px">벽 전면의 작품과 독립형 욕조. 갤러리에 묵는 듯한 하루를 사진과 영상으로.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="AtelierKO.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #111315; color: #111315; font-size: 13px; letter-spacing: 0.2em">ATELIER 페이지로</a><a href="ReserveKO.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; background: {{accent}}; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">예약하기</a></div>
+</div>
+</section>
+<section style="padding-top: 24px; padding-bottom: 40px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<video src="assets/76b57cb29d8c5f14bb7553aa738b3f4c.mp4" poster="assets/67152eb59b7575ede85e1061ef897e95.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="flex: 0 1 360px; min-width: 0; height: 640px; object-fit: cover; display: block; background: #111315"></video>
+<div style="flex: 1 1 360px"><p style="margin: 0 0 16px; font-size: 11px; letter-spacing: 0.24em; color: #5A5E62">MOVIE ・ WALK THROUGH</p><h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(24px, 2.6cqw, 34px); line-height: 1.6">문을 열고,<br>작품 속으로.</h2><p style="margin: 0; font-size: 15px; color: #3E4246">입구에서 침실, 욕실까지. ATELIER를 한 바퀴 도는 영상입니다.</p></div>
+</div>
+</section>
+<section style="padding-top: 40px; padding-bottom: 112px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 32px; font-size: 13px; letter-spacing: 0.2em; color: #5A5E62">PHOTOS ・ 26</p>
+<div style="columns: 3 300px; column-gap: 24px"><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/d9dbcf4692d3e8006a4606a188a25761.jpg" alt="가메이초 건물의 1층. 유리 너머로 작품이 보입니다." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">가메이초 건물의 1층. 유리 너머로 작품이 보입니다.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/f51e268d0f1a7bc6f0d01a6bed20bf13.jpg" alt="흰 리넨 침대와 벽 전면의 작품." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">흰 리넨 침대와 벽 전면의 작품.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/5b2813ac719c291aac646048509e1d11.jpg" alt="침대에서 올려다보는 작품의 벽." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">침대에서 올려다보는 작품의 벽.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/5aa107d75fdce65750eca94eeadbe59d.jpg" alt="침실 벽에 걸린 작품." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">침실 벽에 걸린 작품.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/d1bc17606218ec961b5af4ac8df9b39f.jpg" alt="돌벽에 둘러싸인 독립형 욕조." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">돌벽에 둘러싸인 독립형 욕조.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/fff13caa4534b603ab9105c0cbcd544a.jpg" alt="황동 수전과 흰 욕조." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">황동 수전과 흰 욕조.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/09a2c07aa926a0a53ce8f28eb7e0eee6.jpg" alt="돌로 마감한 파우더룸." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">돌로 마감한 파우더룸.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/b3983752418edefe3d543dc7a0c59b44.jpg" alt="세면대." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">세면대.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/e7c42382c2d86a989610348042fd2e02.jpg" alt="스테인리스 아일랜드 주방." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">스테인리스 아일랜드 주방.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/ad177b4e9a9d9cafcec171e3e0f6408e.jpg" alt="토스터와 전자레인지." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">토스터와 전자레인지.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/239768a4b7c57c47a29dc14ca90f5a23.jpg" alt="테이블 위의 오브제." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">테이블 위의 오브제.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/91c1c9ae3b96241b32a39aade5a5d7ef.jpg" alt="밤의 ATELIER. 조명을 낮추면 작품이 떠오릅니다." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">밤의 ATELIER. 조명을 낮추면 작품이 떠오릅니다.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/7427654ca002bfc14f615ff6923b6b84.jpg" alt="용과 무사." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">용과 무사.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/8fa8488153a3e05cc1c4c464838bf9b2.jpg" alt="컵을 든 파란 머리의 소녀." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">컵을 든 파란 머리의 소녀.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/c9610634d72290b5b558d21a86c96547.jpg" alt="벽 전면의 작품에 둘러싸여 잠드는 1층 원룸." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">벽 전면의 작품에 둘러싸여 잠드는 1층 원룸.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/0a4486be398495bf7d4d7a1591ff7fb3.jpg" alt="선명한 색채의 작품." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">선명한 색채의 작품.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/4af8879122a7f3fe63dd09e51171a259.jpg" alt="큰 테이블과 한 단 높은 공간. 다 함께 둘러앉는 저녁 식사에." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">큰 테이블과 한 단 높은 공간. 다 함께 둘러앉는 저녁 식사에.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/9b91b39a8b3edbb3d207b190b6ce3873.jpg" alt="독립형 욕조. 여행의 피로를 천천히 풀어 줍니다." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">독립형 욕조. 여행의 피로를 천천히 풀어 줍니다.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/c82179abf7bbdaabb52079a03bf25f06.jpg" alt="모노크롬 작품이 걸린 고요한 벽." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">모노크롬 작품이 걸린 고요한 벽.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/ab7bfea5de2c96e2869237435c67c645.jpg" alt="복도 끝에도 작품이 이어집니다." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">복도 끝에도 작품이 이어집니다.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/2438d8b1af347538ba19f3512de02128.jpg" alt="갤러리 같은, 도심의 주방." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">갤러리 같은, 도심의 주방.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/a919f61143d5416f5f5c15a71a7d4cf1.jpg" alt="황동 수전. 세부까지 골라낸 것들." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">황동 수전. 세부까지 골라낸 것들.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/692f4c416fc7fbe4e4b17c1977f531d3.jpg" alt="웰컴 보드가 맞이합니다." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">웰컴 보드가 맞이합니다.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/44ab1ff7ed02fc41da52d30140d10074.jpg" alt="돌로 마감한 세면대와 파우더룸." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">돌로 마감한 세면대와 파우더룸.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/4dd8625f4cca54c97b0b32a72088ec76.jpg" alt="허브 향 배스 어메니티." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">허브 향 배스 어메니티.</figcaption></figure><figure style="break-inside: avoid; margin: 0 0 28px"><img src="assets/1ae73968a37dbbcc7cb8d29f017c8858.jpg" alt="앰프와 스피커로 좋아하는 음악을." style="width: 100%; height: auto; display: block"><figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.7; color: #3E4246">앰프와 스피커로 좋아하는 음악을.</figcaption></figure></div>
+</div>
+</section>
+<section style="background: #E6E5E0; padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">머무름에 대한 상담부터 시작해 보세요.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px"><a href="ReserveKO.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; background: {{accent}}; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">빈 방 확인</a><a href="ReserveKO.dc.html#inquiry" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #111315; color: #111315; font-size: 13px; letter-spacing: 0.2em">플랜 상담하기</a></div>
+</div>
+</section>
+<footer style="background: #111315; color: #ECEBE7; padding-top: 96px; padding-bottom: 48px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: clamp(26px, 7.5cqw, 40px); letter-spacing: 0.24em">VILLA ASAKURA</p>
+<p style="margin: 8px 0 0; font-size: 13px; letter-spacing: 0.15em; color: #A9ADB0">Setouchi ・ Takamatsu</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; font-size: 13px; letter-spacing: 0.15em">
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="ResortKO.dc.html" style="color: #ECEBE7">RESORT</a>
+<a href="CentralParkKO.dc.html" style="color: #ECEBE7">CENTRAL PARK</a>
+<a href="AtelierKO.dc.html" style="color: #ECEBE7">ATELIER</a>
+<a href="GastronomyKO.dc.html" style="color: #ECEBE7">GASTRONOMY</a>
+<a href="ArtKO.dc.html" style="color: #ECEBE7">ART</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="ExperienceKO.dc.html" style="color: #ECEBE7">EXPERIENCE</a>
+<a href="StoryKO.dc.html" style="color: #ECEBE7">STORY</a>
+<a href="JournalKO.dc.html" style="color: #ECEBE7">JOURNAL</a>
+<a href="AreaGuideKO.dc.html" style="color: #ECEBE7">AREA GUIDE</a>
+<a href="AccessKO.dc.html" style="color: #ECEBE7">ACCESS</a>
+<a href="ReserveKO.dc.html" style="color: #ECEBE7">RESERVE</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="https://www.instagram.com/villa_asakura/" target="_blank" rel="noopener" style="color: #ECEBE7">INSTAGRAM</a><a href="AccessKO.dc.html#faq" style="color: #ECEBE7">FAQ</a><a href="AccessKO.dc.html#legal" style="color: #ECEBE7">약관·정책</a></div>
+</div>
+</div>
+<p style="max-width: 1280px; margin: 80px auto 0; font-size: 11px; letter-spacing: 0.15em; color: #A9ADB0">© VILLA ASAKURA</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#23485A","options":["#23485A","#7A5A3A","#3F4A3C","#111315"]},"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#23485A' };
+  }
+}
+</script>
+</body>
+</html>

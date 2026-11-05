@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Villa Asakura ホーム</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+a{color:#111315;text-decoration:none}a:hover{color:#23485A}
+
+.va-root{container-type:inline-size}
+.va-burger{display:none}
+.va-burger>summary{list-style:none;cursor:pointer}
+.va-burger>summary::-webkit-details-marker{display:none}
+[style*="flex: 1"]{min-width:0}
+@container (max-width: 760px){
+.va-links{display:none !important}
+.va-burger{display:block !important}
+.va-logo{font-size:20px !important;letter-spacing:0.16em !important}
+img[style*="object-fit: cover"]:not([style*="position: absolute"]){max-height:440px !important}
+}
+@container (max-width: 560px){
+[style*="columns: 3 300px"],[style*="columns: 4 250px"]{columns:2 !important;column-gap:10px !important}
+[style*="repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 24px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 12px !important}
+}
+.va-sp{display:none}
+@container (max-width: 760px){
+.va-sp{display:block !important}
+.va-pc{display:none !important}
+.va-nav{visibility:hidden !important;height:60px !important;padding-top:0 !important;padding-bottom:0 !important;overflow:hidden !important}
+.va-hero{height:600px !important}
+}
+</style>
+</helmet>
+<div class="va-root" style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #111315; background: #F2F1EE; line-height: 1.8">
+<div class="va-sp va-spbar" style="position: sticky; top: 0; z-index: 60; height: 0"><div style="position: absolute; left: 0; right: 0; top: 0; height: 60px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 20px; background: rgba(17,19,21,0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #F2F1EE"><a href="#top" style="font-family: 'Italiana', serif; font-size: 19px; letter-spacing: 0.16em; white-space: nowrap; color: #F2F1EE">VILLA ASAKURA</a><div style="display: flex; align-items: center; gap: 4px"><a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap">予約</a><details class="va-burger"><summary aria-label="メニュー" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #F2F1EE"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"/></svg></summary><div style="position: absolute; left: 0; right: 0; top: 100%; z-index: 30; max-height: calc(100svh - 60px); overflow-y: auto; box-sizing: border-box; background: #111315; border-top: 1px solid #3A4046; padding: 16px 20px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; font-size: 13px; letter-spacing: 0.14em">
+<a href="Resort.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ACCESS</a>
+<span style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; min-height: 52px"><a href="Main.dc.html" style="color: #F2F1EE; border-bottom: 1px solid #F2F1EE">JP</a><span style="opacity: .45">/</span><a href="MainEN.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #F2F1EE">EN</a><span style="opacity: .45">/</span><a href="MainZH.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #F2F1EE">简</a><span style="opacity: .45">/</span><a href="MainTW.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #F2F1EE">繁</a><span style="opacity: .45">/</span><a href="MainKO.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #F2F1EE">한</a><span style="opacity: .45">/</span><a href="MainTH.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #F2F1EE">ไทย</a></span>
+<a href="Reserve.dc.html" style="grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 16px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div></details></div></div></div>
+
+<!-- HERO -->
+<header class="va-hero" style="position: relative; height: 800px; overflow: hidden; background: #111315">
+<video src="assets/d56b2f246c911163e834332789edf9b4.mp4" poster="assets/85c92784249bc20b21bb053aed861993.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>
+<div style="position: absolute; inset: 0; background: rgba(10,14,18,0.32)"></div>
+<nav class="va-nav" style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 28px clamp(20px, 5cqw, 64px); color: #F2F1EE">
+<a class="va-logo" href="#top" style="font-family: 'Italiana', serif; font-size: 26px; letter-spacing: 0.24em; color: #F2F1EE">VILLA ASAKURA</a>
+<div class="va-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 12px; letter-spacing: 0.2em">
+<a href="Resort.dc.html" style="color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #F2F1EE">ACCESS</a>
+<span style="display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: center"><a href="Main.dc.html" style="color: #F2F1EE; border-bottom: 1px solid #F2F1EE">JP</a><span style="opacity: .45">/</span><a href="MainEN.dc.html" style="color: #F2F1EE">EN</a><span style="opacity: .45">/</span><a href="MainZH.dc.html" style="color: #F2F1EE">简</a><span style="opacity: .45">/</span><a href="MainTW.dc.html" style="color: #F2F1EE">繁</a><span style="opacity: .45">/</span><a href="MainKO.dc.html" style="color: #F2F1EE">한</a><span style="opacity: .45">/</span><a href="MainTH.dc.html" style="color: #F2F1EE">ไทย</a></span>
+<a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div>
+</nav>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(20px, 5cqw, 64px) 72px; color: #F2F1EE">
+<p style="margin: 0 0 18px; font-size: 12px; letter-spacing: 0.32em">SETOUCHI ・ TAKAMATSU ・ JAPAN</p>
+<h1 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(40px, 6cqw, 84px); line-height: 1.3; letter-spacing: 0.06em">海に浮かぶ、<br>私設美術館。</h1>
+<p style="margin: 20px 0 0; font-family: 'Italiana', serif; font-size: clamp(18px, 2cqw, 26px); letter-spacing: 0.06em">A private museum, suspended between sea and sky.</p>
+</div>
+</header>
+<!-- PHONE HOME (スマホ専用の短いトップ) -->
+<div class="va-sp va-sp-home">
+<section style="padding: 48px 20px 8px">
+<p style="margin: 0; font-size: 11px; letter-spacing: 0.3em; color: {{accent}}">FIND YOUR STAY</p>
+<h2 style="margin: 10px 0 24px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px; line-height: 1.5">どんな滞在を、お望みですか。</h2>
+<div style="position: relative; height: 560px; overflow: hidden; background: #111315; color: #F2F1EE"><img src="assets/7fb50395e96c94d1ab5fe7981eb08977.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><sc-if value="{{playR}}" hint-placeholder-val="{{false}}"><video src="assets/6cb9cf3f7ccf52a3171ea594b47158bb.mp4" poster="assets/4b7b23df1e045879220db34fe82554b0.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #0B0D10"></video><button type="button" onClick="{{stopR}}" style="position: absolute; right: 12px; top: 12px; z-index: 5; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(242,241,238,0.7); background: rgba(11,13,16,0.55); color: #F2F1EE; font-family: inherit; font-size: 12px; letter-spacing: 0.14em; cursor: pointer"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12" stroke="currentColor" stroke-width="1.4"/></svg>閉じる</button><a href="Resort.dc.html" style="position: absolute; left: 12px; bottom: 12px; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.16em">RESORT を見る →</a></sc-if><sc-if value="{{noPlayR}}" hint-placeholder-val="{{true}}"><div style="position: absolute; right: 12px; top: 12px"><button type="button" onClick="{{startR}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px 0 14px; border: 1px solid rgba(242,241,238,0.8); background: rgba(11,13,16,0.4); color: #F2F1EE; font-family: inherit; font-size: 13px; letter-spacing: 0.14em; cursor: pointer"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M10.5 8.5 L18 13 L10.5 17.5 Z" fill="currentColor"/></svg>動画で見る</button></div><a href="Resort.dc.html" style="position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 20px 20px; background: rgba(11,13,16,0.74); display: flex; flex-direction: column; gap: 6px; color: #F2F1EE"><span style="font-size: 11px; letter-spacing: 0.14em; color: #E9C77B">海辺の邸宅 ・ 一日一組の一棟貸切</span><span style="font-family: 'Italiana', serif; font-size: 38px; letter-spacing: 0.08em; line-height: 1.05">RESORT</span><span style="font-family: 'Shippori Mincho B1', serif; font-size: 19px; line-height: 1.5">海と、特別な時間を。</span><span style="font-size: 13px; line-height: 1.7; color: #D5D6D3">家族や仲間と大人数で。記念日や、一生に一度の滞在に。</span><span style="font-size: 12px; letter-spacing: 0.06em; color: #C8C9C6">611㎡ ・ 最大14名 ・ 270°オーシャンビュー</span><span style="display: inline-flex; align-self: flex-start; align-items: center; min-height: 44px; margin-top: 6px; padding: 0 20px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.16em">RESORT を見る →</span></a></sc-if></div>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px">
+<a href="CentralPark.dc.html" style="display: flex; gap: 14px; background: #E9E8E3; color: #111315"><img src="assets/f6d0df528cbf7a69b3f9e1fc05739b83.jpg" alt="" style="flex: 0 0 128px; width: 128px; height: 188px; object-fit: cover; display: block"><span style="flex: 1 1 auto; min-width: 0; padding: 14px 14px 14px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 10px; letter-spacing: 0.12em; color: #5A5E62">街の邸宅 ・ 4・5F メゾネット</span><span style="font-family: 'Italiana', serif; font-size: 21px; letter-spacing: 0.08em; line-height: 1.2">CENTRAL PARK </span><span style="font-family: 'Shippori Mincho B1', serif; font-size: 15px; line-height: 1.5">街の真ん中で、緑と光に包まれる。</span><span style="font-size: 12px; line-height: 1.6; color: #3E4246">街歩きもグルメも楽しみたい方に。商店街まで徒歩1分。</span><span style="margin-top: auto; font-size: 11px; letter-spacing: 0.06em; color: {{accent}}">120㎡ ・ 最大7名</span></span></a>
+<div style="position: relative; height: 560px; overflow: hidden; background: #111315; color: #F2F1EE"><img src="assets/c9610634d72290b5b558d21a86c96547.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><sc-if value="{{playA}}" hint-placeholder-val="{{false}}"><video src="assets/76b57cb29d8c5f14bb7553aa738b3f4c.mp4" poster="assets/67152eb59b7575ede85e1061ef897e95.jpg" autoPlay="true" muted="true" loop="true" playsInline="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #0B0D10"></video><button type="button" onClick="{{stopA}}" style="position: absolute; right: 12px; top: 12px; z-index: 5; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(242,241,238,0.7); background: rgba(11,13,16,0.55); color: #F2F1EE; font-family: inherit; font-size: 12px; letter-spacing: 0.14em; cursor: pointer"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12" stroke="currentColor" stroke-width="1.4"/></svg>閉じる</button><a href="Atelier.dc.html" style="position: absolute; left: 12px; bottom: 12px; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.16em">ATELIER を見る →</a></sc-if><sc-if value="{{noPlayA}}" hint-placeholder-val="{{true}}"><div style="position: absolute; right: 12px; top: 12px"><button type="button" onClick="{{startA}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px 0 14px; border: 1px solid rgba(242,241,238,0.8); background: rgba(11,13,16,0.4); color: #F2F1EE; font-family: inherit; font-size: 13px; letter-spacing: 0.14em; cursor: pointer"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M10.5 8.5 L18 13 L10.5 17.5 Z" fill="currentColor"/></svg>動画で見る</button></div><a href="Atelier.dc.html" style="position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 20px 20px; background: rgba(11,13,16,0.74); display: flex; flex-direction: column; gap: 6px; color: #F2F1EE"><span style="font-size: 11px; letter-spacing: 0.14em; color: #E9C77B">ギャラリーの部屋 ・ 1F</span><span style="font-family: 'Italiana', serif; font-size: 38px; letter-spacing: 0.08em; line-height: 1.05">ATELIER</span><span style="font-family: 'Shippori Mincho B1', serif; font-size: 19px; line-height: 1.5">作品に囲まれて、眠る。</span><span style="font-size: 13px; line-height: 1.7; color: #D5D6D3">アート好きの方、家族旅・友人旅、公演の夜にも。</span><span style="font-size: 12px; letter-spacing: 0.06em; color: #C8C9C6">75㎡ ・ 最大6名</span><span style="display: inline-flex; align-self: flex-start; align-items: center; min-height: 44px; margin-top: 6px; padding: 0 20px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.16em">ATELIER を見る →</span></a></sc-if></div>
+</div>
+</section>
+<section style="padding: 48px 20px 16px">
+<p style="margin: 0; font-size: 11px; letter-spacing: 0.3em; color: {{accent}}">MORE TO DISCOVER</p>
+<h2 style="margin: 10px 0 20px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 24px; line-height: 1.5">もっと深く、知る。</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px"><a href="Gastronomy.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/18218bd27ff1c57ea0c3a8914944ff98.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">GASTRONOMY</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">料理人が邸宅のキッチンへ</span></a><a href="Art.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/8ac14ac7f66c7af705a9ec84f873005f.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">ART</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">館内の作品と調度品</span></a><a href="Experience.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/a2dbc6d1f093d49d1b56bf1820f76c68.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">EXPERIENCE</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">茶・歌舞伎・島への旅</span></a><a href="AreaGuide.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/586bb789071ef15bdcb2ef01b01f3900.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">AREA GUIDE</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">香川と瀬戸内の島々</span></a><a href="Story.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/27906cf5632753fda0ca3173f335323b.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">STORY</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">二世代の物語とご挨拶</span></a><a href="Journal.dc.html" style="display: flex; flex-direction: column; background: #F2F1EE; color: #111315"><img src="assets/09cad1de8d47684e78eb418d6e892f9e.jpg" alt="" style="width: 100%; height: 112px; object-fit: cover; display: block"><span style="padding: 10px 2px 4px; font-family: 'Italiana', serif; font-size: 15px; letter-spacing: 0.12em">JOURNAL</span><span style="padding: 0 2px 6px; font-size: 12px; line-height: 1.5; color: #3E4246">世界が見ている、香川</span></a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px"><a href="Access.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #111315; color: #111315; font-size: 11px; letter-spacing: 0.16em">ACCESS</a></div>
+</section>
+<section style="margin-top: 40px; padding: 48px 20px; background: #111315; color: #ECEBE7">
+<p style="margin: 0; font-size: 11px; letter-spacing: 0.3em; color: #E9C77B">RESERVE</p>
+<h2 style="margin: 10px 0 24px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px; line-height: 1.5">空室を確認して、ご予約へ。</h2>
+<div style="display: flex; flex-direction: column; gap: 10px"><a href="Reserve.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 52px; background: #F2F1EE; color: #111315; font-size: 13px; letter-spacing: 0.14em">空室を確認・予約する</a><a href="Reserve.dc.html#inquiry" style="display: flex; align-items: center; justify-content: center; min-height: 52px; border: 1px solid #F2F1EE; color: #F2F1EE; font-size: 13px; letter-spacing: 0.14em">相談する（メール）</a></div>
+</section>
+</div>
+
+
+<!-- STAY SELECTOR -->
+<div class="va-pc"><dc-import name="StaySelector" hint-size="100%,920px"></dc-import></div>
+
+<!-- CONCEPT -->
+<section class="va-pc" style="padding: 100px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div style="flex: 1 1 320px">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">01 — CONCEPT</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">美しいものに囲まれて、<br>ただ、ここに居る。</h2>
+</div>
+<div style="flex: 1.3 1 420px; font-size: 16px; color: #3E4246">
+<p style="margin: 0 0 24px">Villa Asakuraは、ニューヨーク、ミラノ、パリで仕事を重ねてきたヘアデザイナーと、ロンドンのセントラル・セント・マーチンズで学んだキュレーター、二世代の「美のプロ」が編み上げた滞在の場です。</p>
+<p style="margin: 0 0 24px">イタリアの工房に誂えた大理石と家具。海を渡って集まった調度品。国内外の現代アート。そして窓の外には、道路さえ見えない270度の瀬戸内海。</p>
+<p style="margin: 0">ここで過ごす時間そのものが、ひとつの作品になる。</p>
+</div>
+</div>
+<div style="max-width: 1280px; margin: 64px auto 0; display: flex; flex-wrap: wrap; gap: 16px">
+<img src="assets/7fb50395e96c94d1ab5fe7981eb08977.jpg" alt="海へとつながるジャグジー" style="flex: 2 1 480px; min-width: 0; height: 440px; object-fit: cover">
+<img src="assets/586bb789071ef15bdcb2ef01b01f3900.jpg" alt="ヤシの葉ごしの海と島" style="flex: 1 1 260px; min-width: 0; height: 440px; object-fit: cover">
+</div>
+</section>
+
+<!-- STAYS -->
+<section class="va-pc" id="stays" style="padding: 24px clamp(20px, 5cqw, 64px) 100px">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">02 — STAYS</p>
+<h2 style="margin: 0 0 64px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">三つの宿、三つの過ごし方。</h2>
+
+<article style="display: flex; flex-wrap: wrap; gap: 48px; align-items: stretch; margin-bottom: 88px">
+<img src="assets/3a21de009c570eae6d2d88027fa2eb11.jpg" alt="RESORTのリビングと海" style="flex: 1.6 1 520px; min-width: 0; height: 520px; object-fit: cover">
+<div style="flex: 1 1 340px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 44px; letter-spacing: 0.08em">RESORT</p>
+<p style="margin: 4px 0 28px; font-size: 14px; letter-spacing: 0.2em; color: #5A5E62">海辺のリトリート ／ 一日一組・一棟貸切</p>
+<p style="margin: 0; font-size: 16px; color: #3E4246">海と空の真ん中にある611㎡の邸宅。朝陽が水面を金色に染め、夕陽が島影を包み、夜は星空だけが残る。庵治石の和室、天蓋付きのベッド、海に開いたジャグジー。</p>
+</div>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 24px; border-top: 1px solid #C9C8C3; padding-top: 24px">
+<div><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">SIZE</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">611㎡</dd></div>
+<div><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">BEDROOMS</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">6</dd></div>
+<div><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">GUESTS</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">up to 12</dd></div>
+<div><dt style="font-size: 11px; letter-spacing: 0.2em; color: #5A5E62">VIEW</dt><dd style="margin: 0; font-family: 'Italiana', serif; font-size: 26px">270° ocean</dd></div>
+</dl>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+
+<a href="Resort.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; background: #111315; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">VIEW RESORT</a>
+</div>
+</div>
+</article>
+
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<article style="flex: 1 1 380px; min-width: 0">
+<img src="assets/53a41dd4300616ae68fdc9910189b419.jpg" alt="CENTRAL PARKの寝室" style="width: 100%; height: 360px; object-fit: cover; display: block">
+<p style="margin: 28px 0 0; font-family: 'Italiana', serif; font-size: 34px; letter-spacing: 0.08em">CENTRAL PARK</p>
+<p style="margin: 2px 0 16px; font-size: 13px; letter-spacing: 0.2em; color: #5A5E62">木隠れのリトリート ／ 4・5F メゾネット</p>
+<p style="margin: 0 0 20px; font-size: 15px; color: #3E4246">天井高5mの吹き抜けと天窓。中央公園の緑を望む、街の真ん中の隠れ家。商店街まで徒歩1分、空港バス停まで徒歩3分。</p>
+<p style="margin: 0 0 20px; font-size: 13px; letter-spacing: 0.1em; color: #5A5E62">120㎡ ・ 最大7名</p>
+<a href="CentralPark.dc.html" style="font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">VIEW CENTRAL PARK</a>
+</article>
+<article style="flex: 1 1 380px; min-width: 0">
+<img src="assets/c82179abf7bbdaabb52079a03bf25f06.jpg" alt="ATELIERの寝室とアート" style="width: 100%; height: 360px; object-fit: cover; display: block">
+<p style="margin: 28px 0 0; font-family: 'Italiana', serif; font-size: 34px; letter-spacing: 0.08em">ATELIER</p>
+<p style="margin: 2px 0 16px; font-size: 13px; letter-spacing: 0.2em; color: #5A5E62">アートと眠る部屋 ／ 1F ワンルーム</p>
+<p style="margin: 0 0 20px; font-size: 15px; color: #3E4246">国内外の現代アーティストの作品に囲まれた、街のアトリエ。家族旅、友人旅、アリーナ公演の夜にも。</p>
+<p style="margin: 0 0 20px; font-size: 13px; letter-spacing: 0.1em; color: #5A5E62">75㎡ ・ 最大6名</p>
+<a href="Atelier.dc.html" style="font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">VIEW ATELIER</a>
+</article>
+</div>
+</div>
+</section>
+
+<!-- GASTRONOMY -->
+<section class="va-pc" style="position: relative; height: 760px; overflow: hidden; background: #0B0D10">
+<img src="assets/5c4882ab43a3b96e22f1e5cf39cbf10f.jpg" alt="夜のVilla Asakura RESORT。全フロアに灯りがともる" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 70%">
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,10,14,0.72) 0%, rgba(8,10,14,0.18) 45%, rgba(8,10,14,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 88px clamp(20px, 5cqw, 64px) 0; color: #F2F1EE">
+<p style="margin: 0 0 18px; font-size: 12px; letter-spacing: 0.32em; color: #E9C78F">AFTER DARK ・ RESORT</p>
+<h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.6cqw, 48px); line-height: 1.55">夜、海辺の邸宅に<br>灯りがともる。</h2>
+<p style="margin: 0; font-size: 16px; max-width: 520px; color: #DCDAD4">日が暮れると、4階と5階の窓すべてに灯りが入ります。海から見れば、瀬戸内に浮かぶ灯台のように。</p>
+<a href="Resort.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; margin-top: 28px; padding: 0 28px; border: 1px solid #F2F1EE; color: #F2F1EE; font-size: 13px; letter-spacing: 0.2em">VIEW RESORT</a>
+</div>
+</section>
+<section class="va-pc" id="gastronomy" style="background: #111315; color: #ECEBE7; padding: 100px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 380px">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">03 — GASTRONOMY</p>
+<h2 style="margin: 0 0 32px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">瀬戸内を、<br>あなたのためだけの食卓に。</h2>
+<p style="margin: 0; font-size: 16px; color: #C8C9C6">香川の海と大地の恵みを知り尽くした料理人が、邸宅のキッチンに立ちます。メニューは決まっていません。滞在の目的、好み、その日の海の様子から、一夜限りのコースを仕立てます。</p>
+</div>
+<img src="assets/18218bd27ff1c57ea0c3a8914944ff98.jpg" alt="RESORTのダイニング" style="flex: 1.2 1 460px; min-width: 0; height: 420px; object-fit: cover">
+</div>
+<div style="margin-top: 64px; display: flex; flex-wrap: wrap; gap: 1px; background: #33373A">
+<div style="flex: 1 1 260px; background: #111315; padding: 36px 32px 36px 0">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; color: #A9C4CF">I</p>
+<h3 style="margin: 12px 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">邸宅の懐石</h3>
+<p style="margin: 0 0 16px; font-size: 14px; color: #C8C9C6">瀬戸内の旬を、海を望むダイニングで。</p>
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: #A9ADB0">要相談</p>
+</div>
+<div style="flex: 1 1 260px; background: #111315; padding: 36px 32px">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; color: #A9C4CF">II</p>
+<h3 style="margin: 12px 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">イタリアン・ナイト</h3>
+<p style="margin: 0 0 16px; font-size: 14px; color: #C8C9C6">大理石の空間に似合う、香川食材のイタリアン。</p>
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: #A9ADB0">要相談</p>
+</div>
+<div style="flex: 1 1 260px; background: #111315; padding: 36px 32px">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; color: #A9C4CF">III</p>
+<h3 style="margin: 12px 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">オーナーと訪ねる名店</h3>
+<p style="margin: 0 0 16px; font-size: 14px; color: #C8C9C6">地元の人だけが知る一軒へ、オーナーがご案内。</p>
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: #A9ADB0">要相談</p>
+</div>
+<div style="flex: 1 1 260px; background: #111315; padding: 36px 0 36px 32px">
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: 22px; color: #A9C4CF">IV</p>
+<h3 style="margin: 12px 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: 22px">海を見る朝食</h3>
+<p style="margin: 0 0 16px; font-size: 14px; color: #C8C9C6">朝陽のバルコニーで、香川の朝ごはんと薬膳茶を。</p>
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; color: #A9ADB0">要相談</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ART -->
+<section class="va-pc" id="art" style="padding: 100px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 300px; display: flex; gap: 16px">
+<img src="assets/8ac14ac7f66c7af705a9ec84f873005f.jpg" alt="館内のアイアン装飾" style="flex: 1 1 0; min-width: 0; height: 460px; object-fit: cover">
+<img src="assets/5bc4534b9c81103670e3caad123f0be2.jpg" alt="庵治石の和室" style="flex: 1.4 1 0; min-width: 0; height: 460px; object-fit: cover; margin-top: 80px">
+</div>
+<div style="flex: 1 1 380px">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">04 — ART</p>
+<h2 style="margin: 0 0 32px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">泊まるたびに、<br>作品と出会う。</h2>
+<p style="margin: 0 0 24px; font-size: 16px; color: #3E4246">館内に並ぶのは、キュレーターが国内外から選んだ現代アートとアンティーク。庵治石の壁が外までつながる和室は、「欧米の人が思い描く和室」をテーマに作られました。</p>
+<p style="margin: 0 0 40px; font-size: 16px; color: #3E4246">心に残った一点は、そのまま持ち帰ることもできます。</p>
+<a href="Art.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border: 1px solid #111315; font-size: 13px; letter-spacing: 0.2em">THE COLLECTION — A4 GALLERY</a>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="va-pc" id="experience" style="padding: 24px clamp(20px, 5cqw, 64px) 100px">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">05 — EXPERIENCE</p>
+<h2 style="margin: 0 0 64px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">ここでしか、できないこと。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 48px 40px">
+<div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 24px">
+<p style="margin: 0 0 12px; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em">ISLAND CRUISE</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">窓から見える島々へ、プライベートボートで。</p>
+</div>
+<div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 24px">
+<p style="margin: 0 0 12px; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em">ART JOURNEY</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">キュレーターと巡る直島・豊島。館内作品の解説から始まる一日。</p>
+</div>
+<div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 24px">
+<p style="margin: 0 0 12px; font-family: 'Italiana', serif; font-size: 20px; letter-spacing: 0.1em">BEAUTY SESSION</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">美容のプロによる、旅の夜のためのヘア＆スタイリング。</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- BUSINESS -->
+<section class="va-pc" style="background: #111315; color: #ECEBE7; padding: 0 clamp(20px, 5cqw, 64px) 100px">
+<a href="Reserve.dc.html#inquiry" style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; color: #ECEBE7; border-top: 1px solid #3A3F44; padding-top: 56px; gap: 40px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">FOR BUSINESS</p>
+<p style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-size: clamp(24px, 2.6cqw, 34px); line-height: 1.6">出張に休日をつなげる「ブレジャー」。<br>チームの合宿や、ご家族の合流にも。</p>
+<p style="margin: 0; font-size: 15px; color: #C8C9C6">午前はミーティング、午後はそれぞれの時間。法人・合宿・長期滞在のご相談は、お問い合わせから。</p>
+</div>
+<div style="flex: 0 1 520px; min-width: 0; display: flex; gap: 8px; height: 220px"><img src="assets/b8306b438b678e4e68d6b375c31d1ba4.jpg" alt="海に面したダイニング" style="flex: 1.4 1 0; min-width: 0; height: 100%; object-fit: cover"><img src="assets/2dac205c79892b1d1eb65d4eb71a655f.jpg" alt="高松の商店街" style="flex: 1 1 0; min-width: 0; height: 100%; object-fit: cover"></div>
+<span style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #ECEBE7; font-size: 13px; letter-spacing: 0.2em">法人・チームのご利用</span>
+</a>
+</section>
+
+<!-- MESSAGE -->
+<section class="va-pc" style="padding: 100px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<img src="assets/27906cf5632753fda0ca3173f335323b.jpg" alt="夜の玄関の扉" style="flex: 0 1 380px; min-width: 0; height: 440px; object-fit: cover">
+<div style="flex: 1 1 420px">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">GREETING ・ ご挨拶</p>
+<p style="margin: 0 0 24px; font-family: 'Shippori Mincho B1', serif; font-size: clamp(20px, 2cqw, 26px); line-height: 1.9">世界中の街で、美しいものを見てきました。<br>それでも、この窓からの景色を超えるものには、まだ出会っていません。</p>
+<p style="margin: 0 0 32px; font-size: 16px; color: #3E4246">この場所に来てくださる方には、宿泊客ではなく、わが家に招いた大切な客人としてお迎えしたい。食事も、作品も、島々への小さな旅も、あなたの滞在に合わせてご一緒に考えます。</p>
+<p style="margin: -8px 0 32px; font-size: 16px; color: #3E4246">高松に生まれ、2013年からは香川県国際親善大使として、香川の魅力を海外に伝えてきました。</p><div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px; padding-top: 20px; border-top: 1px solid #C9C8C3"><div><p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; color: #5A5E62">Villa Asakura オーナー ／ 香川県国際親善大使</p><p style="margin: 4px 0 0; font-family: 'Shippori Mincho B1', serif; font-size: 26px; letter-spacing: 0.16em">朝倉 禅</p></div><a href="Story.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; letter-spacing: 0.12em; color: {{accent}}; border-bottom: 1px solid currentColor">STORY ・ プロフィールを見る →</a></div>
+</div>
+</div>
+</section>
+
+<!-- WHERE WE ARE -->
+<div class="va-pc"><dc-import name="GlobeIntro" hint-size="100%,900px"></dc-import></div>
+
+<!-- ACCESS -->
+<section class="va-pc" id="access" style="border-top: 1px solid #C9C8C3; padding: 96px clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 280px">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">08 — ACCESS</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(26px, 2.8cqw, 38px); line-height: 1.6">瀬戸内の玄関口、高松へ。</h2>
+</div>
+<div style="flex: 1 1 240px">
+<p style="margin: 0 0 8px; font-family: 'Italiana', serif; font-size: 24px; letter-spacing: 0.08em">RESORT</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">香川県高松市新北町29-15　4・5階<br>高松空港より車で約30分 ／ 高松駅より車で約10分<br>専用駐車場あり ・ 空港・駅送迎（有料・予約制）</p>
+</div>
+<div style="flex: 1 1 240px">
+<p style="margin: 0 0 8px; font-family: 'Italiana', serif; font-size: 24px; letter-spacing: 0.08em">CENTRAL PARK</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">香川県高松市亀井町3-8　4・5階<br>空港リムジンバス停 徒歩3分<br>中心商店街 徒歩すぐ</p>
+</div>
+<div style="flex: 1 1 240px">
+<p style="margin: 0 0 8px; font-family: 'Italiana', serif; font-size: 24px; letter-spacing: 0.08em">ATELIER</p>
+<p style="margin: 0; font-size: 15px; color: #3E4246">香川県高松市亀井町3-8　1階<br>空港リムジンバス停 徒歩3分<br>高松港（直島・小豆島行き）車で約10分</p>
+</div>
+</div>
+<div style="max-width: 1280px; margin: 64px auto 0">
+<a href="AreaGuide.dc.html" style="position: relative; display: block; height: 420px; overflow: hidden; background: #111315; color: #F2F1EE">
+<img src="assets/a2dbc6d1f093d49d1b56bf1820f76c68.jpg" alt="島へ渡る船" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,14,18,0.72) 0%, rgba(10,14,18,0.2) 70%)"></div>
+<div style="position: relative; height: 100%; box-sizing: border-box; padding: clamp(28px, 5cqw, 64px); display: flex; flex-direction: column; justify-content: flex-end; gap: 14px; max-width: 640px">
+<p style="margin: 0; font-size: 12px; letter-spacing: 0.32em">AREA GUIDE</p>
+<p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(24px, 3cqw, 38px); line-height: 1.5">街を歩き、島へ渡る。</p>
+<p style="margin: 0; font-size: 14px; color: #D8DADC">空港からの行き方、オーナーが通う店、アートの島、夏の花火。</p>
+<span style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border: 1px solid #F2F1EE; font-size: 13px; letter-spacing: 0.2em">周辺ガイドを見る</span>
+</div>
+</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<section class="va-pc" id="journal-teaser" style="background: #111315; color: #ECEBE7; padding: 0 clamp(20px, 5cqw, 64px)">
+<a href="Journal.dc.html" style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0; color: #ECEBE7; text-decoration: none">
+<span style="flex: 1 1 420px; min-height: 360px; background: url('assets/09cad1de8d47684e78eb418d6e892f9e.jpg') center / cover no-repeat"></span>
+<span style="flex: 1.2 1 460px; min-width: 0; padding: 64px clamp(24px, 4cqw, 56px); display: flex; flex-direction: column; gap: 18px; justify-content: center">
+<span style="font-size: 12px; letter-spacing: 0.3em; color: #E9C77B">JOURNAL ・ No.01</span>
+<span style="font-family: 'Shippori Mincho B1', serif; font-size: clamp(26px, 3cqw, 38px); line-height: 1.45">世界が、香川を見ている。</span>
+<span style="font-size: 15px; color: #C9CCCF">ニューヨーク・タイムズ、BBC、ロンリープラネット、ミシュラン。海外のメディアが「行くべき場所」に選び続ける、日本でいちばん小さな県とアートの話。</span>
+<span style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 6px 12px; border: 1px solid #3A4046; font-size: 12px; letter-spacing: 0.06em; color: #C9CCCF">NYT 2019 ・ No.7</span><span style="padding: 6px 12px; border: 1px solid #3A4046; font-size: 12px; letter-spacing: 0.06em; color: #C9CCCF">BBC 2025</span><span style="padding: 6px 12px; border: 1px solid #3A4046; font-size: 12px; letter-spacing: 0.06em; color: #C9CCCF">Lonely Planet 2025</span><span style="padding: 6px 12px; border: 1px solid #3A4046; font-size: 12px; letter-spacing: 0.06em; color: #C9CCCF">Condé Nast Traveler 2026</span><span style="padding: 6px 12px; border: 1px solid #3A4046; font-size: 12px; letter-spacing: 0.06em; color: #C9CCCF">Michelin ★★★</span></span>
+<span style="font-size: 12px; letter-spacing: 0.2em; color: #E9C77B">コラムを読む →</span>
+</span>
+</a>
+</section>
+<div class="va-pc"><dc-import name="SocialConnect" locale="ja" hint-size="100%,1500px"></dc-import></div>
+<footer style="background: #111315; color: #ECEBE7; padding: 96px clamp(20px, 5cqw, 64px) 48px">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: clamp(26px, 7.5cqw, 40px); letter-spacing: 0.24em">VILLA ASAKURA</p>
+<p style="margin: 8px 0 0; font-size: 13px; letter-spacing: 0.15em; color: #A9ADB0">Setouchi ・ Takamatsu</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; font-size: 13px; letter-spacing: 0.15em">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="Resort.dc.html" style="color: #ECEBE7">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #ECEBE7">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #ECEBE7">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #ECEBE7">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #ECEBE7">ART</a>
+<a href="Experience.dc.html" style="color: #ECEBE7">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="color: #ECEBE7">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #ECEBE7">ACCESS</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="https://www.instagram.com/villa_asakura/" target="_blank" rel="noopener" style="color: #ECEBE7">INSTAGRAM</a><a href="mailto:info@a4tokyo.com" style="color: #ECEBE7">info@a4tokyo.com</a>
+<span style="display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: center"><a href="Main.dc.html" style="color: #A9ADB0; border-bottom: 1px solid #A9ADB0">JP</a><span style="opacity: .45">/</span><a href="MainEN.dc.html" style="color: #A9ADB0">EN</a><span style="opacity: .45">/</span><a href="MainZH.dc.html" style="color: #A9ADB0">简</a><span style="opacity: .45">/</span><a href="MainTW.dc.html" style="color: #A9ADB0">繁</a><span style="opacity: .45">/</span><a href="MainKO.dc.html" style="color: #A9ADB0">한</a><span style="opacity: .45">/</span><a href="MainTH.dc.html" style="color: #A9ADB0">ไทย</a></span>
+</div>
+</div>
+</div>
+<p style="max-width: 1280px; margin: 80px auto 0; font-size: 11px; letter-spacing: 0.15em; color: #A9ADB0">© VILLA ASAKURA</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#23485A","options":["#23485A","#7A5A3A","#3F4A3C","#111315"]},"$preview":{"width":1440,"height":10720}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const st = this.state || {};
+    return { accent: this.props.accent ?? '#23485A', playR: !!st['pR'], noPlayR: !st['pR'], startR: () => this.setState({ pR: true }), stopR: () => this.setState({ pR: false }), playA: !!st['pA'], noPlayA: !st['pA'], startA: () => this.setState({ pA: true }), stopA: () => this.setState({ pA: false }) };
+  }
+}
+</script>
+</body>
+</html>

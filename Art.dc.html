@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ART | Villa Asakura</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Shippori+Mincho+B1:wght@400;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F1EE}
+a{color:#111315;text-decoration:none}a:hover{color:#23485A}
+
+.va-root{container-type:inline-size}
+.va-burger{display:none}
+.va-burger>summary{list-style:none;cursor:pointer}
+.va-burger>summary::-webkit-details-marker{display:none}
+[style*="flex: 1"]{min-width:0}
+@container (max-width: 760px){
+.va-links{display:none !important}
+.va-burger{display:block !important}
+.va-logo{font-size:20px !important;letter-spacing:0.16em !important}
+img[style*="object-fit: cover"]:not([style*="position: absolute"]){max-height:440px !important}
+}
+@container (max-width: 560px){
+[style*="columns: 3 300px"],[style*="columns: 4 250px"]{columns:2 !important;column-gap:10px !important}
+[style*="repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 24px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 12px !important}
+}
+.va-sp{display:none}
+@container (max-width: 760px){
+.va-sp{display:block !important}
+.va-pc{display:none !important}
+.va-nav{visibility:hidden !important;height:60px !important;padding-top:0 !important;padding-bottom:0 !important;overflow:hidden !important}
+.va-hero{height:600px !important}
+}
+</style>
+</helmet>
+<div class="va-root" style="font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif; color: #111315; background: #F2F1EE; line-height: 1.8">
+<div class="va-sp va-spbar" style="position: sticky; top: 0; z-index: 60; height: 0"><div style="position: absolute; left: 0; right: 0; top: 0; height: 60px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 20px; background: rgba(17,19,21,0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #F2F1EE"><a href="Main.dc.html" style="font-family: 'Italiana', serif; font-size: 19px; letter-spacing: 0.16em; white-space: nowrap; color: #F2F1EE">VILLA ASAKURA</a><div style="display: flex; align-items: center; gap: 4px"><a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; background: #F2F1EE; color: #111315; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap">予約</a><details class="va-burger"><summary aria-label="メニュー" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #F2F1EE"><svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"/></svg></summary><div style="position: absolute; left: 0; right: 0; top: 100%; z-index: 30; max-height: calc(100svh - 60px); overflow-y: auto; box-sizing: border-box; background: #111315; border-top: 1px solid #3A4046; padding: 16px 20px 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; font-size: 13px; letter-spacing: 0.14em">
+<a href="Resort.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid #23282D; color: #F2F1EE">ACCESS</a>
+<span style="grid-column: 1 / -1; display: flex; align-items: center; min-height: 52px; opacity: 0.85"><a href="Art.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">JP</a> / <a href="ArtEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="ArtZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="ArtTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="ArtKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="ArtTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="Reserve.dc.html" style="grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 16px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div></details></div></div></div>
+<header style="position: relative; height: 760px; overflow: hidden; background: #111315">
+<img src="assets/8ac14ac7f66c7af705a9ec84f873005f.jpg" alt="鉄の装飾と鏡" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: absolute; inset: 0; background: rgba(10,14,18,0.34)"></div>
+<nav class="va-nav" style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 24px clamp(20px, 5cqw, 64px); color: #F2F1EE">
+<a class="va-logo" href="Main.dc.html" style="font-family: 'Italiana', serif; font-size: 26px; letter-spacing: 0.24em; color: #F2F1EE">VILLA ASAKURA</a>
+<div class="va-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 12px; letter-spacing: 0.18em">
+<a href="Resort.dc.html" style="color: #F2F1EE">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #F2F1EE">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #F2F1EE">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #F2F1EE">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #F2F1EE">ART</a>
+<a href="Experience.dc.html" style="color: #F2F1EE">EXPERIENCE</a>
+<a href="AreaGuide.dc.html" style="color: #F2F1EE">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #F2F1EE">ACCESS</a>
+<span style="opacity: 0.85"><a href="Art.dc.html" style="color:inherit;font-weight:600;border-bottom:1px solid currentColor">JP</a> / <a href="ArtEN.dc.html" style="color:inherit;opacity:0.7">EN</a> / <a href="ArtZH.dc.html" style="color:inherit;opacity:0.7">简</a> / <a href="ArtTW.dc.html" style="color:inherit;opacity:0.7">繁</a> / <a href="ArtKO.dc.html" style="color:inherit;opacity:0.7">한</a> / <a href="ArtTH.dc.html" style="color:inherit;opacity:0.7">ไทย</a></span>
+<a href="Reserve.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #F2F1EE; color: #F2F1EE">RESERVE</a>
+</div>
+</nav>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(20px, 5cqw, 64px) 64px; color: #F2F1EE">
+<p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.32em">THE COLLECTION</p>
+<h1 style="margin: 0; font-family: 'Italiana', serif; font-weight: 400; font-size: clamp(52px, 7cqw, 104px); line-height: 1.05; letter-spacing: 0.06em">ART</h1>
+<p style="margin: 14px 0 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(18px, 2cqw, 24px); letter-spacing: 0.08em">泊まるたびに、作品と出会う。</p>
+</div>
+</header>
+
+<section style="padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 320px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">01 — CURATOR'S NOTE</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">美術館ではなく、<br>暮らしの中に。</h2></div>
+<div style="flex: 1.3 1 420px; font-size: 16px; color: #3E4246">
+<p style="margin: 0 0 24px">作品は、ガラスケースの向こうではなく、触れられる距離に。朝のコーヒーの横に、眠る前の視線の先に。</p>
+<p style="margin: 0">ヘアデザイナーが世界の仕事先で出会った調度品と、キュレーターが選んだ現代アート。二つの目線が混ざり合うことで、ここにしかない景色が生まれました。</p>
+</div>
+</div>
+</section>
+<section style="padding-top: 0; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">02 — SELECTED WORKS</p>
+<div style="display: flex; flex-wrap: wrap; gap: 56px 32px"><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/a97fee07afcb60441a1c37ecb20796d9.jpg" alt="アンティーク彩色扉" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">アンティーク彩色扉</p></figcaption>
+</figure><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/db1a20290d8a338808942fd3f3df8881.jpg" alt="ガラスのシャンデリア" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">ガラスのシャンデリア</p></figcaption>
+</figure><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/68d68ea82ad4b32b67544b29bbc0c120.jpg" alt="螺鈿細工の椅子" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">螺鈿細工の椅子</p></figcaption>
+</figure><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/5b1259dad03209e880b1a00c805611ea.jpg" alt="現代アート ・ ATELIER" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">現代アート ・ ATELIER</p></figcaption>
+</figure><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/2cc1c7462f27a2fa35038fbd119e3fb0.jpg" alt="庵治石の壁" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">庵治石の壁</p><p style="margin: 0; font-size: 13px; color: #5A5E62">香川・庵治の石</p></figcaption>
+</figure><figure style="flex: 1 1 360px; min-width: 0; margin: 0">
+<img src="assets/1897a242ac315eca54ca7975c559d11a.jpg" alt="石と枝のしつらえ ・ 静かな祈りの一角" style="width: 100%; height: 460px; object-fit: cover; display: block">
+<figcaption style="margin-top: 14px"><p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: 18px">石と枝のしつらえ ・ 静かな祈りの一角</p></figcaption>
+</figure></div>
+</div>
+</section>
+<section style="padding-top: 0; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">03 — IN THE ROOMS</p>
+<h2 style="margin: 0 0 16px; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6">部屋ごとに、<br>違うコレクションがある。</h2>
+<a href="Journal.dc.html" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin: 0 0 40px 24px; font-size: 13px; letter-spacing: 0.15em; border-bottom: 1px solid #111315">コラム：世界が、香川を見ている →</a>
+<p style="margin: 0 0 56px; font-size: 16px; color: #3E4246; max-width: 640px">CENTRAL PARKとATELIERには、国内外の現代アーティストの作品を展示しています。泊まる部屋を変えれば、出会う作品も変わります。</p>
+<div style="margin-bottom: 72px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; margin-bottom: 28px; padding-top: 20px; border-top: 1px solid #111315"><p style="margin: 0; font-family: 'Italiana', serif; font-size: 30px; letter-spacing: 0.08em">CENTRAL PARK</p><a href="CentralPark.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">CENTRAL PARK のページへ</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 36px 20px"><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/a659193c03e7a104d38d29543505cc87.jpg" alt="色彩に包まれた少女" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">色彩に包まれた少女</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/de3aa3f9a208952b19f00ce9e744969e.jpg" alt="黄色の背景に座る少女" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">黄色の背景に座る少女</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/a1384963155d7d16d74d4003e8a786c6.jpg" alt="波と火山の極彩色" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">波と火山の極彩色</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/bbc6746b367bfcdabb6b01445d5198c4.jpg" alt="花畑の牛と子ども" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">花畑の牛と子ども</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/682803b43b90894a38d8faa2e5ebbf6d.jpg" alt="宇宙を漂う、楕円の絵画" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">宇宙を漂う、楕円の絵画</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/5b6ab3189556649ee7bd0b498611a96a.jpg" alt="花を生けた缶" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">花を生けた缶</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/91af81dc963461ef3d5a02091a664d65.jpg" alt="コラージュの肖像" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">コラージュの肖像</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/2aa315f31533b0fd14d0b46629700b0f.jpg" alt="うさぎのポップアート" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">うさぎのポップアート</span></figcaption></figure></div>
+</div>
+<div style="margin-bottom: 72px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; margin-bottom: 28px; padding-top: 20px; border-top: 1px solid #111315"><p style="margin: 0; font-family: 'Italiana', serif; font-size: 30px; letter-spacing: 0.08em">ATELIER</p><a href="Atelier.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; letter-spacing: 0.2em; border-bottom: 1px solid #111315">ATELIER のページへ</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 36px 20px"><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/2bd9f4f77276a4a3db7dc5414e7207c6.jpg" alt="色彩がはじける抽象画" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">色彩がはじける抽象画</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/3146c74a2b9b7fb12539b49bd7b8f7d3.jpg" alt="青い人物" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">青い人物</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/81d21c330f033904f3937e40d003f743.jpg" alt="黒い猫のドローイング" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">黒い猫のドローイング</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/09f51f496fd94081a5ae6689db6ee14f.jpg" alt="赤い線で描かれた少年" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">赤い線で描かれた少年</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/ac7a59bcd143237e90c77bd483609e9d.jpg" alt="花の丸い絵画" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">花の丸い絵画</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/7427654ca002bfc14f615ff6923b6b84.jpg" alt="龍と武者" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">龍と武者</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/8fa8488153a3e05cc1c4c464838bf9b2.jpg" alt="カップを持つ青い髪の少女" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">カップを持つ青い髪の少女</span></figcaption></figure><figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #E6E5E0; display: flex; align-items: center; justify-content: center; padding: 18px; box-sizing: border-box"><img src="assets/72cf8fbdf509a23b7e255955c0a97335.jpg" alt="数字とおばけ" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block"></div><figcaption style="margin-top: 12px"><span style="display: block; font-family: 'Shippori Mincho B1', serif; font-size: 16px; color: #111315">数字とおばけ</span></figcaption></figure></div>
+</div>
+</div>
+</section>
+<section style="background: #111315; color: #ECEBE7; padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 420px"><p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: #A9C4CF">04 — TAKE IT HOME</p><h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 20px">心に残った一点を、<br>あなたの家へ。</h2><p style="margin: 0; font-size: 16px; color: #C8C9C6">館内の作品の一部は、A4 Galleryでご購入いただけます。作品の横のQRコードから、作家と作品の物語へ。</p></div>
+<a href="#a4gallery" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #ECEBE7; color: #ECEBE7; font-size: 13px; letter-spacing: 0.2em">A4 GALLERY へ</a>
+</div>
+</section>
+<section style="padding-top: 120px; padding-bottom: 120px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; color: {{accent}}">05 — ART AROUND SETOUCHI</p>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 400; font-size: clamp(28px, 3.2cqw, 44px); line-height: 1.6; margin-bottom: 56px">アートの島々への、拠点として。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 40px"><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0 0 6px; font-family: 'Shippori Mincho B1', serif; font-size: 20px">直島</p><p style="margin: 0; font-size: 14px; color: #3E4246">地中美術館、ベネッセハウス ミュージアム。高松港からフェリーで約50分。</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0 0 6px; font-family: 'Shippori Mincho B1', serif; font-size: 20px">豊島</p><p style="margin: 0; font-size: 14px; color: #3E4246">豊島美術館。高松港から高速船で約35分。</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0 0 6px; font-family: 'Shippori Mincho B1', serif; font-size: 20px">イサム・ノグチ庭園美術館</p><p style="margin: 0; font-size: 14px; color: #3E4246">高松市牟礼。見学は事前予約制です。</p></div><div style="flex: 1 1 260px; border-top: 1px solid #111315; padding-top: 16px"><p style="margin: 0 0 6px; font-family: 'Shippori Mincho B1', serif; font-size: 20px">高松市美術館</p><p style="margin: 0; font-size: 14px; color: #3E4246">街なかの現代美術。CENTRAL PARK・ATELIERから歩いて行ける距離です。</p></div></div>
+<div style="margin-top: 56px"><a href="Experience.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 34px; border: 1px solid #111315; color: #111315; font-size: 13px; letter-spacing: 0.2em">キュレーターと巡るアートツアー</a></div>
+</div>
+</section>
+<footer style="background: #111315; color: #ECEBE7; padding-top: 96px; padding-bottom: 48px; padding-left: clamp(20px, 5cqw, 64px); padding-right: clamp(20px, 5cqw, 64px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div>
+<p style="margin: 0; font-family: 'Italiana', serif; font-size: clamp(26px, 7.5cqw, 40px); letter-spacing: 0.24em">VILLA ASAKURA</p>
+<p style="margin: 8px 0 0; font-size: 13px; letter-spacing: 0.15em; color: #A9ADB0">Setouchi ・ Takamatsu</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; font-size: 13px; letter-spacing: 0.15em">
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="Resort.dc.html" style="color: #ECEBE7">RESORT</a>
+<a href="CentralPark.dc.html" style="color: #ECEBE7">CENTRAL PARK</a>
+<a href="Atelier.dc.html" style="color: #ECEBE7">ATELIER</a>
+<a href="Gastronomy.dc.html" style="color: #ECEBE7">GASTRONOMY</a>
+<a href="Art.dc.html" style="color: #ECEBE7">ART</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="Experience.dc.html" style="color: #ECEBE7">EXPERIENCE</a>
+<a href="Story.dc.html" style="color: #ECEBE7">STORY</a>
+<a href="Journal.dc.html" style="color: #ECEBE7">JOURNAL</a>
+<a href="AreaGuide.dc.html" style="color: #ECEBE7">AREA GUIDE</a>
+<a href="Access.dc.html" style="color: #ECEBE7">ACCESS</a>
+<a href="Reserve.dc.html" style="color: #ECEBE7">RESERVE</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px"><a href="https://www.instagram.com/villa_asakura/" target="_blank" rel="noopener" style="color: #ECEBE7">INSTAGRAM</a><a href="Access.dc.html#faq" style="color: #ECEBE7">FAQ</a><a href="Access.dc.html#legal" style="color: #ECEBE7">規約・ポリシー</a></div>
+</div>
+</div>
+<p style="max-width: 1280px; margin: 80px auto 0; font-size: 11px; letter-spacing: 0.15em; color: #A9ADB0">© VILLA ASAKURA</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#23485A","options":["#23485A","#7A5A3A","#3F4A3C","#111315"]},"$preview":{"width":1440,"height":6900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#23485A' };
+  }
+}
+</script>
+</body>
+</html>
